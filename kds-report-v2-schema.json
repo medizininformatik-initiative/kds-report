@@ -1,0 +1,216 @@
+{
+  "$schema": "https:://mediziniformatik-initiative/fdpg/kdsReport/v2/schema",
+  "definitions": {
+    "capabilityStatement": {
+      "type": "object",
+      "properties": {
+        "software": {
+            "$ref": "#/definitions/software"
+        },
+        "restResources": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/restResource"
+          }
+        },
+        "instantiates": {
+          "$ref": "#/definitions/instantiates"
+        }
+      },
+      "required": [
+        "software",
+        "restResources"
+      ],
+      "additionalProperties": false
+    },
+    "software": {
+      "properties": {
+        "name": {
+          "description": "Name of the FHIR server used",
+          "type": "string"
+        },
+        "version": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "version"
+      ],
+      "additionalProperties": false
+    },
+    "restResource": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string"
+        },
+        "searchParam": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/searchParam"
+          }
+        }
+      },
+      "required": [
+        "type",
+        "searchParam"
+      ],
+      "additionalProperties": false
+    },
+    "searchParam": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "definition": {
+          "type": "string"
+        },
+        "documentation": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "type"
+      ],
+      "additionalProperties": false
+    },
+    "instantiates": {
+      "type": "array"
+    },
+    "statusQueries": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/definitions/statusQuery"
+      }
+    },
+    "statusQuery": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "type": {
+          "enum": [
+            "count",
+            "year"
+          ]
+        },
+        "query": {
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "success",
+            "failed"
+          ]
+        }
+      },
+      "required": [
+        "type",
+        "query",
+        "status"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "count"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "response": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "response"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "year"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "dateParam": {
+                "type": "string"
+              },
+              "responseByYear": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "year": {
+                      "type": "integer"
+                    },
+                    "status": {
+                      "enum": [
+                        "success",
+                        "failed"
+                      ]
+                    },
+                    "response": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "year",
+                    "status",
+                    "response"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "dateParam",
+              "responseByYear"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "type": "object",
+  "properties": {
+    "siteName": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string",
+      "format": "url"
+    },
+    "datetime": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "capabilityStatement": {
+      "$ref": "#/definitions/capabilityStatement"
+    },
+    "statusQueries": {
+      "$ref": "#/definitions/statusQueries"
+    }
+  },
+  "required": [
+    "siteName",
+    "version",
+    "datetime",
+    "statusQueries",
+    "capabilityStatement"
+  ],
+  "additionalProperties": false
+}

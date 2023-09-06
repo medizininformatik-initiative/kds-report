@@ -1,0 +1,1612 @@
+{
+  "siteName": "my-site-name",
+  "version": "0.0.0",
+  "datetime": "2023-08-03T18:45:26",
+  "capabilityStatement": {
+    "software": {
+      "name": "Blaze",
+      "version": "0.22.0"
+    },
+    "instantiates": [],
+    "restResources": [
+      {
+        "type": "Condition",
+        "searchParam": [
+          {
+            "name": "recorded-date",
+            "type": "date",
+            "definition": "http://hl7.org/fhir/SearchParameter/Condition-recorded-date"
+          },
+          {
+            "name": "body-site",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/Condition-body-site"
+          },
+          {
+            "name": "onset-age",
+            "type": "quantity",
+            "definition": "http://hl7.org/fhir/SearchParameter/Condition-onset-age",
+            "documentation": "Decimal values are truncated at two digits after the decimal point."
+          },
+          {
+            "name": "encounter",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/Condition-encounter"
+          },
+          {
+            "name": "clinical-status",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/Condition-clinical-status"
+          },
+          {
+            "name": "evidence-detail",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/Condition-evidence-detail"
+          },
+          {
+            "name": "abatement-age",
+            "type": "quantity",
+            "definition": "http://hl7.org/fhir/SearchParameter/Condition-abatement-age",
+            "documentation": "Decimal values are truncated at two digits after the decimal point."
+          },
+          {
+            "name": "abatement-string",
+            "type": "string"
+          },
+          {
+            "name": "identifier",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/clinical-identifier"
+          },
+          {
+            "name": "subject",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/Condition-subject"
+          },
+          {
+            "name": "asserter",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/Condition-asserter"
+          },
+          {
+            "name": "patient",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/clinical-patient"
+          },
+          {
+            "name": "category",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/Condition-category"
+          },
+          {
+            "name": "onset-date",
+            "type": "date",
+            "definition": "http://hl7.org/fhir/SearchParameter/Condition-onset-date"
+          },
+          {
+            "name": "severity",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/Condition-severity"
+          },
+          {
+            "name": "onset-info",
+            "type": "string"
+          },
+          {
+            "name": "evidence",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/Condition-evidence"
+          },
+          {
+            "name": "code",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/clinical-code"
+          },
+          {
+            "name": "verification-status",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/Condition-verification-status"
+          },
+          {
+            "name": "abatement-date",
+            "type": "date",
+            "definition": "http://hl7.org/fhir/SearchParameter/Condition-abatement-date"
+          },
+          {
+            "name": "stage",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/Condition-stage"
+          }
+        ]
+      },
+      {
+        "type": "Consent",
+        "searchParam": [
+          {
+            "name": "MII_SP_Consent_ProvisionCodeType",
+            "type": "composite",
+            "definition": "https://www.medizininformatik-initiative.de/fhir/modul-consent/SearchParameter/mii-sp-consent-provisioncodetype"
+          },
+          {
+            "name": "MII_SP_Consent_ProvisionCode",
+            "type": "token",
+            "definition": "https://www.medizininformatik-initiative.de/fhir/modul-consent/SearchParameter/mii-sp-consent-provisioncode"
+          },
+          {
+            "name": "security-label",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/Consent-security-label"
+          },
+          {
+            "name": "consentor",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/Consent-consentor"
+          },
+          {
+            "name": "MII_SP_Consent_ProvisionPeriod",
+            "type": "date",
+            "definition": "https://www.medizininformatik-initiative.de/fhir/modul-consent/SearchParameter/mii-sp-consent-provisionperiod"
+          },
+          {
+            "name": "status",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/Consent-status"
+          },
+          {
+            "name": "identifier",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/clinical-identifier"
+          },
+          {
+            "name": "scope",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/Consent-scope"
+          },
+          {
+            "name": "action",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/Consent-action"
+          },
+          {
+            "name": "MII_SP_Consent_ProvisionType",
+            "type": "token",
+            "definition": "https://www.medizininformatik-initiative.de/fhir/modul-consent/SearchParameter/mii-sp-consent-provisiontype"
+          },
+          {
+            "name": "date",
+            "type": "date",
+            "definition": "http://hl7.org/fhir/SearchParameter/clinical-date"
+          },
+          {
+            "name": "patient",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/clinical-patient"
+          },
+          {
+            "name": "category",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/Consent-category"
+          },
+          {
+            "name": "period",
+            "type": "date",
+            "definition": "http://hl7.org/fhir/SearchParameter/Consent-period"
+          },
+          {
+            "name": "source-reference",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/Consent-source-reference"
+          },
+          {
+            "name": "data",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/Consent-data"
+          },
+          {
+            "name": "organization",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/Consent-organization"
+          },
+          {
+            "name": "actor",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/Consent-actor"
+          },
+          {
+            "name": "purpose",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/Consent-purpose"
+          }
+        ]
+      },
+      {
+        "type": "DiagnosticReport",
+        "searchParam": [
+          {
+            "name": "media",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/DiagnosticReport-media"
+          },
+          {
+            "name": "based-on",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/DiagnosticReport-based-on"
+          },
+          {
+            "name": "issued",
+            "type": "date",
+            "definition": "http://hl7.org/fhir/SearchParameter/DiagnosticReport-issued"
+          },
+          {
+            "name": "encounter",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/clinical-encounter"
+          },
+          {
+            "name": "conclusion",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/DiagnosticReport-conclusion"
+          },
+          {
+            "name": "status",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/DiagnosticReport-status"
+          },
+          {
+            "name": "identifier",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/clinical-identifier"
+          },
+          {
+            "name": "subject",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/DiagnosticReport-subject"
+          },
+          {
+            "name": "specimen",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/DiagnosticReport-specimen"
+          },
+          {
+            "name": "date",
+            "type": "date",
+            "definition": "http://hl7.org/fhir/SearchParameter/clinical-date"
+          },
+          {
+            "name": "patient",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/clinical-patient"
+          },
+          {
+            "name": "category",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/DiagnosticReport-category"
+          },
+          {
+            "name": "code",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/clinical-code"
+          },
+          {
+            "name": "result",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/DiagnosticReport-result"
+          },
+          {
+            "name": "results-interpreter",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/DiagnosticReport-results-interpreter"
+          },
+          {
+            "name": "performer",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/DiagnosticReport-performer"
+          }
+        ]
+      },
+      {
+        "type": "Encounter",
+        "searchParam": [
+          {
+            "name": "based-on",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/Encounter-based-on"
+          },
+          {
+            "name": "reason-reference",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/Encounter-reason-reference"
+          },
+          {
+            "name": "service-provider",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/Encounter-service-provider"
+          },
+          {
+            "name": "class",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/Encounter-class"
+          },
+          {
+            "name": "practitioner",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/Encounter-practitioner"
+          },
+          {
+            "name": "diagnosis",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/Encounter-diagnosis"
+          },
+          {
+            "name": "part-of",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/Encounter-part-of"
+          },
+          {
+            "name": "special-arrangement",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/Encounter-special-arrangement"
+          },
+          {
+            "name": "location",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/Encounter-location"
+          },
+          {
+            "name": "participant",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/Encounter-participant"
+          },
+          {
+            "name": "episode-of-care",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/Encounter-episode-of-care"
+          },
+          {
+            "name": "status",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/Encounter-status"
+          },
+          {
+            "name": "identifier",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/clinical-identifier"
+          },
+          {
+            "name": "subject",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/Encounter-subject"
+          },
+          {
+            "name": "account",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/Encounter-account"
+          },
+          {
+            "name": "length",
+            "type": "quantity",
+            "definition": "http://hl7.org/fhir/SearchParameter/Encounter-length",
+            "documentation": "Decimal values are truncated at two digits after the decimal point."
+          },
+          {
+            "name": "type",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/clinical-type"
+          },
+          {
+            "name": "appointment",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/Encounter-appointment"
+          },
+          {
+            "name": "date",
+            "type": "date",
+            "definition": "http://hl7.org/fhir/SearchParameter/clinical-date"
+          },
+          {
+            "name": "location-period",
+            "type": "date",
+            "definition": "http://hl7.org/fhir/SearchParameter/Encounter-location-period"
+          },
+          {
+            "name": "patient",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/clinical-patient"
+          },
+          {
+            "name": "reason-code",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/Encounter-reason-code"
+          },
+          {
+            "name": "participant-type",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/Encounter-participant-type"
+          }
+        ]
+      },
+      {
+        "type": "Medication",
+        "searchParam": [
+          {
+            "name": "form",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/Medication-form"
+          },
+          {
+            "name": "manufacturer",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/Medication-manufacturer"
+          },
+          {
+            "name": "ingredient-code",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/Medication-ingredient-code"
+          },
+          {
+            "name": "expiration-date",
+            "type": "date",
+            "definition": "http://hl7.org/fhir/SearchParameter/Medication-expiration-date"
+          },
+          {
+            "name": "status",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/Medication-status"
+          },
+          {
+            "name": "identifier",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/Medication-identifier"
+          },
+          {
+            "name": "ingredient",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/Medication-ingredient"
+          },
+          {
+            "name": "lot-number",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/Medication-lot-number"
+          },
+          {
+            "name": "code",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/clinical-code"
+          }
+        ]
+      },
+      {
+        "type": "MedicationAdministration",
+        "searchParam": [
+          {
+            "name": "device",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/MedicationAdministration-device"
+          },
+          {
+            "name": "context",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/MedicationAdministration-context"
+          },
+          {
+            "name": "status",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/medications-status"
+          },
+          {
+            "name": "request",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/MedicationAdministration-request"
+          },
+          {
+            "name": "identifier",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/clinical-identifier"
+          },
+          {
+            "name": "subject",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/MedicationAdministration-subject"
+          },
+          {
+            "name": "reason-given",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/MedicationAdministration-reason-given"
+          },
+          {
+            "name": "medication",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/medications-medication"
+          },
+          {
+            "name": "reason-not-given",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/MedicationAdministration-reason-not-given"
+          },
+          {
+            "name": "effective-time",
+            "type": "date",
+            "definition": "http://hl7.org/fhir/SearchParameter/MedicationAdministration-effective-time"
+          },
+          {
+            "name": "patient",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/clinical-patient"
+          },
+          {
+            "name": "code",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/clinical-code"
+          },
+          {
+            "name": "performer",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/MedicationAdministration-performer"
+          }
+        ]
+      },
+      {
+        "type": "MedicationStatement",
+        "searchParam": [
+          {
+            "name": "part-of",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/MedicationStatement-part-of"
+          },
+          {
+            "name": "context",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/MedicationStatement-context"
+          },
+          {
+            "name": "status",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/medications-status"
+          },
+          {
+            "name": "identifier",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/clinical-identifier"
+          },
+          {
+            "name": "subject",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/MedicationStatement-subject"
+          },
+          {
+            "name": "medication",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/medications-medication"
+          },
+          {
+            "name": "source",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/MedicationStatement-source"
+          },
+          {
+            "name": "patient",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/clinical-patient"
+          },
+          {
+            "name": "category",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/MedicationStatement-category"
+          },
+          {
+            "name": "code",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/clinical-code"
+          },
+          {
+            "name": "effective",
+            "type": "date",
+            "definition": "http://hl7.org/fhir/SearchParameter/MedicationStatement-effective"
+          }
+        ]
+      },
+      {
+        "type": "Observation",
+        "searchParam": [
+          {
+            "name": "component-value-quantity",
+            "type": "quantity",
+            "definition": "http://hl7.org/fhir/SearchParameter/Observation-component-value-quantity",
+            "documentation": "Decimal values are truncated at two digits after the decimal point."
+          },
+          {
+            "name": "device",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/Observation-device"
+          },
+          {
+            "name": "component-value-concept",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/Observation-component-value-concept"
+          },
+          {
+            "name": "code-value-quantity",
+            "type": "composite",
+            "definition": "http://hl7.org/fhir/SearchParameter/Observation-code-value-quantity"
+          },
+          {
+            "name": "based-on",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/Observation-based-on"
+          },
+          {
+            "name": "combo-data-absent-reason",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/Observation-combo-data-absent-reason"
+          },
+          {
+            "name": "has-member",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/Observation-has-member"
+          },
+          {
+            "name": "component-code-value-quantity",
+            "type": "composite",
+            "definition": "http://hl7.org/fhir/SearchParameter/Observation-component-code-value-quantity"
+          },
+          {
+            "name": "component-data-absent-reason",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/Observation-component-data-absent-reason"
+          },
+          {
+            "name": "method",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/Observation-method"
+          },
+          {
+            "name": "focus",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/Observation-focus"
+          },
+          {
+            "name": "component-code-value-concept",
+            "type": "composite",
+            "definition": "http://hl7.org/fhir/SearchParameter/Observation-component-code-value-concept"
+          },
+          {
+            "name": "value-date",
+            "type": "date",
+            "definition": "http://hl7.org/fhir/SearchParameter/Observation-value-date"
+          },
+          {
+            "name": "combo-code",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/Observation-combo-code"
+          },
+          {
+            "name": "encounter",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/clinical-encounter"
+          },
+          {
+            "name": "value-quantity",
+            "type": "quantity",
+            "definition": "http://hl7.org/fhir/SearchParameter/Observation-value-quantity",
+            "documentation": "Decimal values are truncated at two digits after the decimal point."
+          },
+          {
+            "name": "part-of",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/Observation-part-of"
+          },
+          {
+            "name": "combo-value-concept",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/Observation-combo-value-concept"
+          },
+          {
+            "name": "component-code",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/Observation-component-code"
+          },
+          {
+            "name": "status",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/Observation-status"
+          },
+          {
+            "name": "identifier",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/clinical-identifier"
+          },
+          {
+            "name": "subject",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/Observation-subject"
+          },
+          {
+            "name": "specimen",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/Observation-specimen"
+          },
+          {
+            "name": "combo-value-quantity",
+            "type": "quantity",
+            "definition": "http://hl7.org/fhir/SearchParameter/Observation-combo-value-quantity",
+            "documentation": "Decimal values are truncated at two digits after the decimal point."
+          },
+          {
+            "name": "value-string",
+            "type": "string"
+          },
+          {
+            "name": "date",
+            "type": "date",
+            "definition": "http://hl7.org/fhir/SearchParameter/clinical-date"
+          },
+          {
+            "name": "combo-code-value-quantity",
+            "type": "composite",
+            "definition": "http://hl7.org/fhir/SearchParameter/Observation-combo-code-value-quantity"
+          },
+          {
+            "name": "patient",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/clinical-patient"
+          },
+          {
+            "name": "category",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/Observation-category"
+          },
+          {
+            "name": "data-absent-reason",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/Observation-data-absent-reason"
+          },
+          {
+            "name": "value-concept",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/Observation-value-concept"
+          },
+          {
+            "name": "code-value-concept",
+            "type": "composite",
+            "definition": "http://hl7.org/fhir/SearchParameter/Observation-code-value-concept"
+          },
+          {
+            "name": "code",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/clinical-code"
+          },
+          {
+            "name": "derived-from",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/Observation-derived-from"
+          },
+          {
+            "name": "combo-code-value-concept",
+            "type": "composite",
+            "definition": "http://hl7.org/fhir/SearchParameter/Observation-combo-code-value-concept"
+          },
+          {
+            "name": "performer",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/Observation-performer"
+          }
+        ]
+      },
+      {
+        "type": "Patient",
+        "searchParam": [
+          {
+            "name": "address-use",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/individual-address-use"
+          },
+          {
+            "name": "codex-ethnicity",
+            "type": "token",
+            "definition": "http://codex.de/ethnicity"
+          },
+          {
+            "name": "address-country",
+            "type": "string"
+          },
+          {
+            "name": "death-date",
+            "type": "date",
+            "definition": "http://hl7.org/fhir/SearchParameter/Patient-death-date"
+          },
+          {
+            "name": "gender",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/individual-gender"
+          },
+          {
+            "name": "email",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/individual-email"
+          },
+          {
+            "name": "address-city",
+            "type": "string"
+          },
+          {
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "name": "general-practitioner",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/Patient-general-practitioner"
+          },
+          {
+            "name": "address-state",
+            "type": "string"
+          },
+          {
+            "name": "address",
+            "type": "string"
+          },
+          {
+            "name": "identifier",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/Patient-identifier"
+          },
+          {
+            "name": "given",
+            "type": "string"
+          },
+          {
+            "name": "link",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/Patient-link"
+          },
+          {
+            "name": "family",
+            "type": "string"
+          },
+          {
+            "name": "phone",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/individual-phone"
+          },
+          {
+            "name": "phonetic",
+            "type": "string"
+          },
+          {
+            "name": "birthdate",
+            "type": "date",
+            "definition": "http://hl7.org/fhir/SearchParameter/individual-birthdate"
+          },
+          {
+            "name": "telecom",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/individual-telecom"
+          },
+          {
+            "name": "active",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/Patient-active"
+          },
+          {
+            "name": "language",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/Patient-language"
+          },
+          {
+            "name": "organization",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/Patient-organization"
+          },
+          {
+            "name": "deceased",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/Patient-deceased"
+          },
+          {
+            "name": "address-postalcode",
+            "type": "string"
+          },
+          {
+            "name": "codex-age",
+            "type": "quantity",
+            "definition": "http://codex.de/age",
+            "documentation": "Decimal values are truncated at two digits after the decimal point."
+          }
+        ]
+      },
+      {
+        "type": "Procedure",
+        "searchParam": [
+          {
+            "name": "based-on",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/Procedure-based-on"
+          },
+          {
+            "name": "reason-reference",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/Procedure-reason-reference"
+          },
+          {
+            "name": "instantiates-uri",
+            "type": "uri",
+            "definition": "http://hl7.org/fhir/SearchParameter/Procedure-instantiates-uri"
+          },
+          {
+            "name": "encounter",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/clinical-encounter"
+          },
+          {
+            "name": "part-of",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/Procedure-part-of"
+          },
+          {
+            "name": "location",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/Procedure-location"
+          },
+          {
+            "name": "status",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/Procedure-status"
+          },
+          {
+            "name": "identifier",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/clinical-identifier"
+          },
+          {
+            "name": "subject",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/Procedure-subject"
+          },
+          {
+            "name": "date",
+            "type": "date",
+            "definition": "http://hl7.org/fhir/SearchParameter/clinical-date"
+          },
+          {
+            "name": "patient",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/clinical-patient"
+          },
+          {
+            "name": "category",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/Procedure-category"
+          },
+          {
+            "name": "instantiates-canonical",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/Procedure-instantiates-canonical"
+          },
+          {
+            "name": "reason-code",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/Procedure-reason-code"
+          },
+          {
+            "name": "code",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/clinical-code"
+          },
+          {
+            "name": "performer",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/Procedure-performer"
+          }
+        ]
+      },
+      {
+        "type": "ResearchSubject",
+        "searchParam": [
+          {
+            "name": "date",
+            "type": "date",
+            "definition": "http://hl7.org/fhir/SearchParameter/ResearchSubject-date"
+          },
+          {
+            "name": "identifier",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/ResearchSubject-identifier"
+          },
+          {
+            "name": "individual",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/ResearchSubject-individual"
+          },
+          {
+            "name": "patient",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/ResearchSubject-patient"
+          },
+          {
+            "name": "status",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/ResearchSubject-status"
+          },
+          {
+            "name": "study",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/ResearchSubject-study"
+          }
+        ]
+      },
+      {
+        "type": "ServiceRequest",
+        "searchParam": [
+          {
+            "name": "priority",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/ServiceRequest-priority"
+          },
+          {
+            "name": "based-on",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/ServiceRequest-based-on"
+          },
+          {
+            "name": "requester",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/ServiceRequest-requester"
+          },
+          {
+            "name": "body-site",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/ServiceRequest-body-site"
+          },
+          {
+            "name": "instantiates-uri",
+            "type": "uri",
+            "definition": "http://hl7.org/fhir/SearchParameter/ServiceRequest-instantiates-uri"
+          },
+          {
+            "name": "authored",
+            "type": "date",
+            "definition": "http://hl7.org/fhir/SearchParameter/ServiceRequest-authored"
+          },
+          {
+            "name": "requisition",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/ServiceRequest-requisition"
+          },
+          {
+            "name": "encounter",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/clinical-encounter"
+          },
+          {
+            "name": "status",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/ServiceRequest-status"
+          },
+          {
+            "name": "identifier",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/clinical-identifier"
+          },
+          {
+            "name": "subject",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/ServiceRequest-subject"
+          },
+          {
+            "name": "specimen",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/ServiceRequest-specimen"
+          },
+          {
+            "name": "occurrence",
+            "type": "date",
+            "definition": "http://hl7.org/fhir/SearchParameter/ServiceRequest-occurrence"
+          },
+          {
+            "name": "intent",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/ServiceRequest-intent"
+          },
+          {
+            "name": "replaces",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/ServiceRequest-replaces"
+          },
+          {
+            "name": "patient",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/clinical-patient"
+          },
+          {
+            "name": "category",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/ServiceRequest-category"
+          },
+          {
+            "name": "instantiates-canonical",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/ServiceRequest-instantiates-canonical"
+          },
+          {
+            "name": "code",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/clinical-code"
+          },
+          {
+            "name": "performer-type",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/ServiceRequest-performer-type"
+          },
+          {
+            "name": "performer",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/ServiceRequest-performer"
+          }
+        ]
+      },
+      {
+        "type": "Specimen",
+        "searchParam": [
+          {
+            "name": "parent",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/Specimen-parent"
+          },
+          {
+            "name": "accession",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/Specimen-accession"
+          },
+          {
+            "name": "status",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/Specimen-status"
+          },
+          {
+            "name": "identifier",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/Specimen-identifier"
+          },
+          {
+            "name": "subject",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/Specimen-subject"
+          },
+          {
+            "name": "collected",
+            "type": "date",
+            "definition": "http://hl7.org/fhir/SearchParameter/Specimen-collected"
+          },
+          {
+            "name": "bodysite",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/Specimen-bodysite"
+          },
+          {
+            "name": "type",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/Specimen-type"
+          },
+          {
+            "name": "patient",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/Specimen-patient"
+          },
+          {
+            "name": "container-id",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/Specimen-container-id"
+          },
+          {
+            "name": "container",
+            "type": "token",
+            "definition": "http://hl7.org/fhir/SearchParameter/Specimen-container"
+          },
+          {
+            "name": "collector",
+            "type": "reference",
+            "definition": "http://hl7.org/fhir/SearchParameter/Specimen-collector"
+          }
+        ]
+      }
+    ]
+  },
+  "statusQueries": [
+    {
+      "name": "sum-medication-statement-mii",
+      "type": "count",
+      "query": "/MedicationStatement?_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement&_summary=count",
+      "status": "success",
+      "response": 0
+    },
+    {
+      "name": "sum-medication-administration-mii",
+      "type": "count",
+      "query": "/MedicationAdministration?_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration&_summary=count",
+      "status": "success",
+      "response": 0
+    },
+    {
+      "name": "sum-medication-mii",
+      "type": "count",
+      "query": "/Medication?_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication&_summary=count",
+      "status": "success",
+      "response": 0
+    },
+    {
+      "name": "sum-patient-mii",
+      "type": "count",
+      "query": "/Patient?_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient&_summary=count",
+      "status": "success",
+      "response": 12040
+    },
+    {
+      "name": "sum-patient-mii-version1",
+      "type": "count",
+      "query": "/Patient?_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient|1&_summary=count",
+      "status": "failed",
+      "response": -1
+    },
+    {
+      "name": "sum-patient-mii-version2",
+      "type": "count",
+      "query": "/Patient?_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient|2&_summary=count",
+      "status": "failed",
+      "response": -1
+    },
+    {
+      "name": "sum-patient-pseudonymisiert-mii",
+      "type": "count",
+      "query": "/Patient?_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/PatientPseudonymisiert&_summary=count",
+      "status": "success",
+      "response": 0
+    },
+    {
+      "name": "sum-researchsubject-mii",
+      "type": "count",
+      "query": "/ResearchSubject?_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/ResearchSubject&_summary=count",
+      "status": "success",
+      "response": 0
+    },
+    {
+      "name": "sum-researchsubject-mii-version1",
+      "type": "count",
+      "query": "/ResearchSubject?_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/ResearchSubject|1&_summary=count",
+      "status": "failed",
+      "response": -1
+    },
+    {
+      "name": "sum-researchsubject-mii-version2",
+      "type": "count",
+      "query": "/ResearchSubject?_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/ResearchSubject|2&_summary=count",
+      "status": "failed",
+      "response": -1
+    },
+    {
+      "name": "sum-vitalstatus-mii",
+      "type": "count",
+      "query": "/Observation?_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus&_summary=count",
+      "status": "success",
+      "response": 0
+    },
+    {
+      "name": "sum-vitalstatus-mii-version1",
+      "type": "count",
+      "query": "/Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus|1&_summary=count",
+      "status": "failed",
+      "response": -1
+    },
+    {
+      "name": "sum-vitalstatus-mii-version2",
+      "type": "count",
+      "query": "/Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus|2&_summary=count",
+      "status": "failed",
+      "response": -1
+    },
+    {
+      "name": "sum-todesursache-mii",
+      "type": "count",
+      "query": "/Condition?_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Todesursache&_summary=count",
+      "status": "success",
+      "response": 0
+    },
+    {
+      "name": "sum-encounter-einrichtung-mii",
+      "type": "count",
+      "query": "/Encounter?_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung&type=http://fhir.de/CodeSystem/Kontaktebene|einrichtungskontakt&_summary=count",
+      "status": "success",
+      "response": 0
+    },
+    {
+      "name": "sum-encounter-abteilung-mii",
+      "type": "count",
+      "query": "/Encounter?_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung&type=http://fhir.de/CodeSystem/Kontaktebene|abteilungskontakt&_summary=count",
+      "status": "success",
+      "response": 0
+    },
+    {
+      "name": "sum-encounter-versorgung-mii",
+      "type": "count",
+      "query": "/Encounter?_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung&type=http://fhir.de/CodeSystem/Kontaktebene|versorgungsstellenkontakt&_summary=count",
+      "status": "success",
+      "response": 0
+    },
+    {
+      "name": "sum-condition-mii",
+      "type": "count",
+      "query": "/Condition?_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose&_summary=count",
+      "status": "success",
+      "response": 12072
+    },
+    {
+      "name": "sum-procedure-mii",
+      "type": "count",
+      "query": "/Procedure?_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure&_summary=count",
+      "status": "success",
+      "response": 0
+    },
+    {
+      "name": "sum-diagnosticreport-mii",
+      "type": "count",
+      "query": "/DiagnosticReport?_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/DiagnosticReportLab&_summary=count",
+      "status": "success",
+      "response": 0
+    },
+    {
+      "name": "sum-observation-lab-mii",
+      "type": "count",
+      "query": "/Observation?_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab&_summary=count",
+      "status": "success",
+      "response": 12168
+    },
+    {
+      "name": "sum-servicerequest-mii",
+      "type": "count",
+      "query": "/ServiceRequest?_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ServiceRequestLab&_summary=count",
+      "status": "success",
+      "response": 0
+    },
+    {
+      "name": "sum-consent-all",
+      "type": "count",
+      "query": "/Consent?_summary=count",
+      "status": "success",
+      "response": 9687
+    },
+    {
+      "name": "sum-consent-hl7de",
+      "type": "count",
+      "query": "/Consent?_profile=http://fhir.de/ConsentManagement/StructureDefinition/Consent&_summary=count",
+      "status": "success",
+      "response": 9687
+    },
+    {
+      "name": "sum-consent-mii",
+      "type": "count",
+      "query": "/Consent?_profile=https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung&_summary=count",
+      "status": "success",
+      "response": 0
+    },
+    {
+      "name": "sum-medication-statement-all",
+      "type": "count",
+      "query": "/MedicationStatement?_summary=count",
+      "status": "success",
+      "response": 0
+    },
+    {
+      "name": "sum-medication-administration-all",
+      "type": "count",
+      "query": "/MedicationAdministration?_summary=count",
+      "status": "success",
+      "response": 0
+    },
+    {
+      "name": "sum-patient-all",
+      "type": "count",
+      "query": "/Patient?_summary=count",
+      "status": "success",
+      "response": 12040
+    },
+    {
+      "name": "sum-encounter-all",
+      "type": "count",
+      "query": "/Encounter?_summary=count",
+      "status": "success",
+      "response": 24192
+    },
+    {
+      "name": "sum-condition-all",
+      "type": "count",
+      "query": "/Condition?_summary=count",
+      "status": "success",
+      "response": 12072
+    },
+    {
+      "name": "sum-procedure-all",
+      "type": "count",
+      "query": "/Procedure?_summary=count",
+      "status": "success",
+      "response": 0
+    },
+    {
+      "name": "sum-diagnostic-report-all",
+      "type": "count",
+      "query": "/DiagnosticReport?_summary=count",
+      "status": "success",
+      "response": 0
+    },
+    {
+      "name": "sum-observation-all",
+      "type": "count",
+      "query": "/Observation?_summary=count",
+      "status": "success",
+      "response": 12168
+    },
+    {
+      "name": "sum-servicerequest-all",
+      "type": "count",
+      "query": "/ServiceRequest?_summary=count",
+      "status": "success",
+      "response": 0
+    },
+    {
+      "name": "sum-medication-all",
+      "type": "count",
+      "query": "/Medication?_summary=count",
+      "status": "success",
+      "response": 0
+    },
+    {
+      "name": "sum-researchsubject-all",
+      "type": "count",
+      "query": "/ResearchSubject?_summary=count",
+      "status": "success",
+      "response": 0
+    },
+    {
+      "name": "sum-specimen-all",
+      "type": "count",
+      "query": "/Specimen?_summary=count",
+      "status": "success",
+      "response": 0
+    },
+    {
+      "name": "sum-specimen-mii-biobank",
+      "type": "count",
+      "query": "/Specimen?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Specimen&_summary=count",
+      "status": "success",
+      "response": 0
+    },
+    {
+      "name": "sum-encounter-all-year",
+      "type": "year",
+      "query": "/Encounter?_summary=count",
+      "dateParam": "date",
+      "startYear": null,
+      "status": "success",
+      "responseByYear": [
+        {
+          "year": 2000,
+          "response": 0,
+          "status": "success"
+        },
+        {
+          "year": 2001,
+          "response": 0,
+          "status": "success"
+        },
+        {
+          "year": 2002,
+          "response": 0,
+          "status": "success"
+        },
+        {
+          "year": 2003,
+          "response": 0,
+          "status": "success"
+        },
+        {
+          "year": 2004,
+          "response": 0,
+          "status": "success"
+        },
+        {
+          "year": 2005,
+          "response": 0,
+          "status": "success"
+        },
+        {
+          "year": 2006,
+          "response": 0,
+          "status": "success"
+        },
+        {
+          "year": 2007,
+          "response": 0,
+          "status": "success"
+        },
+        {
+          "year": 2008,
+          "response": 0,
+          "status": "success"
+        },
+        {
+          "year": 2009,
+          "response": 0,
+          "status": "success"
+        },
+        {
+          "year": 2010,
+          "response": 0,
+          "status": "success"
+        },
+        {
+          "year": 2011,
+          "response": 0,
+          "status": "success"
+        },
+        {
+          "year": 2012,
+          "response": 0,
+          "status": "success"
+        },
+        {
+          "year": 2013,
+          "response": 0,
+          "status": "success"
+        },
+        {
+          "year": 2014,
+          "response": 0,
+          "status": "success"
+        },
+        {
+          "year": 2015,
+          "response": 0,
+          "status": "success"
+        },
+        {
+          "year": 2016,
+          "response": 0,
+          "status": "success"
+        },
+        {
+          "year": 2017,
+          "response": 0,
+          "status": "success"
+        },
+        {
+          "year": 2018,
+          "response": 0,
+          "status": "success"
+        },
+        {
+          "year": 2019,
+          "response": 56,
+          "status": "success"
+        },
+        {
+          "year": 2020,
+          "response": 0,
+          "status": "success"
+        },
+        {
+          "year": 2021,
+          "response": 48,
+          "status": "success"
+        },
+        {
+          "year": 2022,
+          "response": 0,
+          "status": "success"
+        },
+        {
+          "year": 2023,
+          "response": 0,
+          "status": "success"
+        }
+      ]
+    }
+  ]
+}
