@@ -202,48 +202,6 @@
       "query": "/Encounter?_summary=count",
       "dateParam": "date",
       "startYear": 2000
-    },
-    {
-      "name": "invalid - bad parameter in url",
-      "type": "year",
-      "query": "/Encounter?code=123_summary=count",
-      "dateParam": "date",
-      "startYear": 2000
-    },
-    {
-      "name": "invalid - _summary_count at the end missing",
-      "type": "year",
-      "query": "/Encounter?code=123t",
-      "dateParam": "date",
-      "startYear": 2000
-    },
-    {
-      "name": "invalid - bad date param - more detailed than year",
-      "type": "year",
-      "query": "/Encounter?date=2020-03-14_summary=count",
-      "dateParam": "date",
-      "startYear": 2000
-    },
-    {
-      "name": "invalid - bad date param",
-      "type": "year",
-      "query": "/Encounter?date=2020&_summary=count",
-      "dateParam": "date",
-      "startYear": 2000
-    },
-    {
-      "name": "invalid - bad date param",
-      "type": "year",
-      "query": "/Encounter?date=eq2020t&_summary=count",
-      "dateParam": "date",
-      "startYear": 2000
-    },
-    {
-      "name": "invalid - bad date param",
-      "type": "year",
-      "query": "/Encounter?date=eq2020&_summary=count",
-      "dateParam": "date",
-      "startYear": 2000
     }
   ]
 }
