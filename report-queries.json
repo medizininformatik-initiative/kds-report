@@ -1,203 +1,323 @@
 {
   "siteName": "my-site-name",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "datetime": "",
   "capabilityStatement": {
     "software": {}
   },
   "statusQueries":[
     {
-      "name": "sum-medication-statement-mii",
-      "type": "count",
-      "query": "/MedicationStatement?_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement&_summary=count"
-    },
-    {
-      "name": "sum-medication-administration-mii",
-      "type": "count",
-      "query": "/MedicationAdministration?_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration&_summary=count"
-    },
-    {
-      "name": "sum-medication-mii",
-      "type": "count",
-      "query": "/Medication?_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication&_summary=count"
-    },
-    {
-      "name": "sum-patient-mii",
+      "name": "Person-Patient-mii",
       "type": "count",
       "query": "/Patient?_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient&_summary=count"
     },
     {
-      "name": "sum-patient-mii-version1",
+      "name": "Person-Patient-mii-version1",
       "type": "count",
       "query": "/Patient?_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient|1&_summary=count"
     },
     {
-      "name": "sum-patient-mii-version2",
+      "name": "Person-Patient-mii-version2",
       "type": "count",
       "query": "/Patient?_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient|2&_summary=count"
     },
     {
-      "name": "sum-patient-pseudonymisiert-mii",
+      "name": "Person-Patient-pseudonymisiert-mii",
       "type": "count",
       "query": "/Patient?_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/PatientPseudonymisiert&_summary=count"
     },
     {
-      "name": "sum-researchsubject-mii",
+      "name": "Person-Researchsubject-mii",
       "type": "count",
       "query": "/ResearchSubject?_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/ResearchSubject&_summary=count"
     },
     {
-      "name": "sum-researchsubject-mii-version1",
+      "name": "Person-Researchsubject-mii-version1",
       "type": "count",
       "query": "/ResearchSubject?_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/ResearchSubject|1&_summary=count"
     },
     {
-      "name": "sum-researchsubject-mii-version2",
+      "name": "Person-Researchsubject-mii-version2",
       "type": "count",
       "query": "/ResearchSubject?_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/ResearchSubject|2&_summary=count"
     },
     {
-      "name": "sum-vitalstatus-mii",
+      "name": "Person-Vitalstatus-mii",
       "type": "count",
       "query": "/Observation?_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus&_summary=count"
     },
     {
-      "name": "sum-vitalstatus-mii-version1",
+      "name": "Person-Vitalstatus-mii-version1",
       "type": "count",
       "query": "/Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus|1&_summary=count"
     },
     {
-      "name": "sum-vitalstatus-mii-version2",
+      "name": "Person-Vitalstatus-mii-version2",
       "type": "count",
       "query": "/Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus|2&_summary=count"
     },
     {
-      "name": "sum-todesursache-mii",
+      "name": "Person-Todesursache-mii",
       "type": "count",
       "query": "/Condition?_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Todesursache&_summary=count"
     },
     {
-      "name": "sum-encounter-einrichtung-mii",
+      "name": "Fall-Einrichtung-mii",
       "type": "count",
       "query": "/Encounter?_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung&type=http://fhir.de/CodeSystem/Kontaktebene|einrichtungskontakt&_summary=count"
     },
     {
-      "name": "sum-encounter-abteilung-mii",
+      "name": "Fall-Abteilung-mii",
       "type": "count",
       "query": "/Encounter?_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung&type=http://fhir.de/CodeSystem/Kontaktebene|abteilungskontakt&_summary=count"
     },
     {
-      "name": "sum-encounter-versorgung-mii",
+      "name": "Fall-Versorgung-mii",
       "type": "count",
       "query": "/Encounter?_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung&type=http://fhir.de/CodeSystem/Kontaktebene|versorgungsstellenkontakt&_summary=count"
     },
     {
-      "name": "sum-condition-mii",
+      "name": "Medikation-Statement-mii",
+      "type": "count",
+      "query": "/MedicationStatement?_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement&_summary=count"
+    },
+    {
+      "name": "Medikation-Administration-mii",
+      "type": "count",
+      "query": "/MedicationAdministration?_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration&_summary=count"
+    },
+    {
+      "name": "Medikation-Request-mii",
+      "type": "count",
+      "query": "/MedicationRequest?_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest&_summary=count"
+    },
+    {
+      "name": "Diagnose-Condition-mii",
       "type": "count",
       "query": "/Condition?_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose&_summary=count"
     },
     {
-      "name": "sum-procedure-mii",
+      "name": "Prozedur-Procedure-mii",
       "type": "count",
       "query": "/Procedure?_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure&_summary=count"
     },
     {
-      "name": "sum-diagnosticreport-mii",
+      "name": "Labor-Diagnosticreport-mii",
       "type": "count",
       "query": "/DiagnosticReport?_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/DiagnosticReportLab&_summary=count"
     },
     {
-      "name": "sum-observation-lab-mii",
+      "name": "Labor-Observation-mii",
       "type": "count",
       "query": "/Observation?_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab&_summary=count"
     },
     {
-      "name": "sum-servicerequest-mii",
+      "name": "Labor-Servicerequest-mii",
       "type": "count",
       "query": "/ServiceRequest?_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ServiceRequestLab&_summary=count"
     },
     {
-      "name": "sum-consent-all",
-      "type": "count",
-      "query": "/Consent?_summary=count"
-    },
-    {
-      "name": "sum-consent-hl7de",
-      "type": "count",
-      "query": "/Consent?_profile=http://fhir.de/ConsentManagement/StructureDefinition/Consent&_summary=count"
-    },
-    {
-      "name": "sum-consent-mii",
+      "name": "Consent-Consent-mii",
       "type": "count",
       "query": "/Consent?_profile=https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung&_summary=count"
     },
     {
-      "name": "sum-medication-statement-all",
-      "type": "count",
-      "query": "/MedicationStatement?_summary=count"
-    },
-    {
-      "name": "sum-medication-administration-all",
-      "type": "count",
-      "query": "/MedicationAdministration?_summary=count"
-    },
-    {
-      "name": "sum-patient-all",
-      "type": "count",
-      "query": "/Patient?_summary=count"
-    },
-    {
-      "name": "sum-encounter-all",
-      "type": "count",
-      "query": "/Encounter?_summary=count"
-    },
-    {
-      "name": "sum-condition-all",
-      "type": "count",
-      "query": "/Condition?_summary=count"
-    },
-    {
-      "name": "sum-procedure-all",
-      "type": "count",
-      "query": "/Procedure?_summary=count"
-    },
-    {
-      "name": "sum-diagnostic-report-all",
-      "type": "count",
-      "query": "/DiagnosticReport?_summary=count"
-    },
-    {
-      "name": "sum-observation-all",
-      "type": "count",
-      "query": "/Observation?_summary=count"
-    },
-    {
-      "name": "sum-servicerequest-all",
-      "type": "count",
-      "query": "/ServiceRequest?_summary=count"
-    },
-    {
-      "name": "sum-medication-all",
-      "type": "count",
-      "query": "/Medication?_summary=count"
-    },
-    {
-      "name": "sum-researchsubject-all",
-      "type": "count",
-      "query": "/ResearchSubject?_summary=count"
-    },
-    {
-      "name": "sum-specimen-all",
-      "type": "count",
-      "query": "/Specimen?_summary=count"
-    },
-    {
-      "name": "sum-specimen-mii-biobank",
+      "name": "Biobank-Specimen-mii",
       "type": "count",
       "query": "/Specimen?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Specimen&_summary=count"
     },
     {
-      "name": "sum-encounter-all-year",
+      "name": "ICU-Extraporaleverfahren-mii",
+      "type": "count",
+      "query": "/Procedure?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/extrakorporales-verfahren&_summary=count"
+    },
+    {
+      "name": "ICU-Beatmung-mii",
+      "type": "count",
+      "query": "/Procedure?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/beatmung&_summary=count"
+    },
+    {
+      "name": "ICU-Monitoringvitaldaten-mii",
+      "type": "count",
+      "query": "/Observation?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/monitoring-und-vitaldaten&_summary=count"
+    },
+    {
+      "name": "ICU-Blutdruck-mii",
+      "type": "count",
+      "query": "/Observation?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/blutdruck&_summary=count"
+    },
+    {
+      "name": "ICU-Koerpertemp-mii",
+      "type": "count",
+      "query": "/Observation?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Koerpertemperatur_Generisch&_summary=count"
+    },
+    {
+      "name": "ICU-Pulsoxy-mii",
+      "type": "count",
+      "query": "/Observation?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/sauerstoffsaettigung-im-arteriellen-blut-durch-pulsoxymetrie&_summary=count"
+    },
+    {
+      "name": "ICU-Herzfrequenz-mii",
+      "type": "count",
+      "query": "/Observation?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/herzfrequenz&_summary=count"
+    },
+    {
+      "name": "Molgen-Anforderung-mii",
+      "type": "count",
+      "query": "/ServiceRequest?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/anforderung-genetischer-test&_summary=count"
+    },
+    {
+      "name": "Molgen-Befundbericht-mii",
+      "type": "count",
+      "query": "/DiagnosticReport?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/molekulargenetischer-befundbericht&_summary=count"
+    },
+    {
+      "name": "Molgen-Ergebnis-mii",
+      "type": "count",
+      "query": "/Observation?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/ergebnis-zusammenfassung&_summary=count"
+    },
+    {
+      "name": "Molgen-TherapeutischeImplikation-mii",
+      "type": "count",
+      "query": "/Observation?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/therapeutische-implikation&_summary=count"
+    },
+    {
+      "name": "Molgen-DiagnostischeImplikation-mii",
+      "type": "count",
+      "query": "/Observation?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/diagnostische-implikation&_summary=count"
+    },
+    {
+      "name": "Molgen-Medikationsempfehlung-mii",
+      "type": "count",
+      "query": "/Task?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/medikationsempfehlung&_summary=count"
+    },
+    {
+      "name": "Molgen-EmpfohleneFolgemaßnahme-mii",
+      "type": "count",
+      "query": "/Task?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/empfohlene-folgemassnahme&_summary=count"
+    },
+    {
+      "name": "Molgen-Variante-mii",
+      "type": "count",
+      "query": "/Observation?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/variante&_summary=count"
+    },
+    {
+      "name": "Molgen-Region-mii",
+      "type": "count",
+      "query": "/Observation?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/untersuchte-region&_summary=count"
+    },
+    {
+      "name": "Molgen-Haplotype-hl7",
+      "type": "count",
+      "query": "/Observation?_profile=http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/haplotype&_summary=count"
+    },
+    {
+      "name": "Molgen-Genotyp-mii",
+      "type": "count",
+      "query": "/Observation?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/genotyp&_summary=count"
+    },
+    {
+      "name": "Molgen-SequencePhase-hl7",
+      "type": "count",
+      "query": "/Observation?_profile=http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/sequence-phase-relationship&_summary=count"
+    },
+    {
+      "name": "Molgen-Mutationslast-mii",
+      "type": "count",
+      "query": "/Observation?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mutationslast&_summary=count"
+    },
+    {
+      "name": "Molgen-Mikrosatelliten-mii",
+      "type": "count",
+      "query": "/Observation?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mikrosatelliteninstabilitaet&_summary=count"
+    },
+    {
+      "name": "Molgen-Familienanamnese-mii",
+      "type": "count",
+      "query": "/FamilyMemberHistory?_profile=	https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/familienanamnese&_summary=count"
+    },
+    {
+      "name": "Molgen-PRS-mii",
+      "type": "count",
+      "query": "/RiskAssessment?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/polygener-risiko-score&_summary=count"
+    },
+    {
+      "name": "Patho-Report-mii",
+      "type": "count",
+      "query": "/DiagnosticReport?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-report&_summary=count"
+    },
+   {
+      "name": "Patho-Base-mii",
+      "type": "count",
+      "query": "/Observation?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-base-observation&_summary=count"
+    },
+       {
+      "name": "Patho-Macroscopic-mii",
+      "type": "count",
+      "query": "/Observation?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-macroscopic-grouper&_summary=count"
+    },
+       {
+      "name": "Patho-Microscopic-mii",
+      "type": "count",
+      "query": "/Observation?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-microscopic-grouper&_summary=count"
+    },
+       {
+      "name": "Patho-Intraoperative-mii",
+      "type": "count",
+      "query": "/Observation?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-intraoperative-grouper&_summary=count"
+    },
+       {
+      "name": "Patho-DiagnosticConclusion-mii",
+      "type": "count",
+      "query": "/Observation?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-diagnostic-conclusion-grouper&_summary=count"
+    },
+       {
+      "name": "Patho-AdditionalSpecified-mii",
+      "type": "count",
+      "query": "/Observation?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-additional-specified-grouper&_summary=count"
+    },
+       {
+      "name": "Patho-Finding-mii",
+      "type": "count",
+      "query": "/Observation?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding&_summary=count"
+    },
+       {
+      "name": "Patho-Composition-mii",
+      "type": "count",
+      "query": "/Composition?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-composition&_summary=count"
+    },
+       {
+      "name": "Patho-ServiceRequest-mii",
+      "type": "count",
+      "query": "/ServiceRequest?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-service-request&_summary=count"
+    },
+       {
+      "name": "Patho-Specimen-mii",
+      "type": "count",
+      "query": "/Specimen?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen&_summary=count"
+    },
+       {
+      "name": "Patho-ActiveProblems-mii",
+      "type": "count",
+      "query": "/List?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-active-problems-list&_summary=count"
+    },
+    {
+      "name": "Patho-History-mii",
+      "type": "count",
+      "query": "/List?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-history-of-present-illness&_summary=count"
+    },
+    {
+      "name": "Patho-Problem-mii",
+      "type": "count",
+      "query": "/Condition?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-problem-list-item&_summary=count"
+    },
+    {
+      "name": "Patho-Image-mii",
+      "type": "count",
+      "query": "/Media?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-attached-image&_summary=count"
+    },
+    {
+      "name": "Jahresabfrage-Fall",
       "type": "year",
       "query": "/Encounter?_summary=count",
       "dateParam": "date",
