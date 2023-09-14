@@ -3,6 +3,7 @@ from datetime import date
 from urllib.parse import urlparse
 
 bundle = {
+    "resourceType": "Bundle",
     "meta": {
         "versionId": "1",
         "lastUpdated": "2023-02-17T09:14:08.242+01:00",
