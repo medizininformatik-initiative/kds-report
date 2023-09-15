@@ -1,12 +1,13 @@
 import json
-from datetime import date
+from datetime import date, datetime
 from urllib.parse import urlparse
+import pytz
 
 bundle = {
     "resourceType": "Bundle",
     "meta": {
         "versionId": "1",
-        "lastUpdated": "2023-02-17T09:14:08.242+01:00",
+        "lastUpdated": datetime.now(pytz.timezone('Europe/Berlin')).isoformat(),
         "profile": [
             "http://medizininformatik-initiative.de/fhir/Bundle/search-bundle-report|1.0"
         ],
