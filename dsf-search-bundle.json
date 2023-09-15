@@ -22,517 +22,517 @@
     {
       "request": {
         "method": "GET",
-        "url": "/Patient?_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient&_summary=count"
+        "url": "Patient?_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/Patient?_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient|1&_summary=count"
+        "url": "Patient?_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient|1&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/Patient?_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient|2&_summary=count"
+        "url": "Patient?_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient|2&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/Patient?_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/PatientPseudonymisiert&_summary=count"
+        "url": "Patient?_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/PatientPseudonymisiert&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/ResearchSubject?_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/ResearchSubject&_summary=count"
+        "url": "ResearchSubject?_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/ResearchSubject&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/ResearchSubject?_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/ResearchSubject|1&_summary=count"
+        "url": "ResearchSubject?_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/ResearchSubject|1&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/ResearchSubject?_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/ResearchSubject|2&_summary=count"
+        "url": "ResearchSubject?_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/ResearchSubject|2&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/Observation?_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus&_summary=count"
+        "url": "Observation?_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus|1&_summary=count"
+        "url": "Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus|1&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus|2&_summary=count"
+        "url": "Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus|2&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/Condition?_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Todesursache&_summary=count"
+        "url": "Condition?_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Todesursache&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/Encounter?_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung&type=http://fhir.de/CodeSystem/Kontaktebene|einrichtungskontakt&_summary=count"
+        "url": "Encounter?_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung&type=http://fhir.de/CodeSystem/Kontaktebene|einrichtungskontakt&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/Encounter?_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung&type=http://fhir.de/CodeSystem/Kontaktebene|abteilungskontakt&_summary=count"
+        "url": "Encounter?_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung&type=http://fhir.de/CodeSystem/Kontaktebene|abteilungskontakt&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/Encounter?_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung&type=http://fhir.de/CodeSystem/Kontaktebene|versorgungsstellenkontakt&_summary=count"
+        "url": "Encounter?_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung&type=http://fhir.de/CodeSystem/Kontaktebene|versorgungsstellenkontakt&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/MedicationStatement?_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement&_summary=count"
+        "url": "MedicationStatement?_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationStatement&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/MedicationAdministration?_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration&_summary=count"
+        "url": "MedicationAdministration?_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationAdministration&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/MedicationRequest?_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest&_summary=count"
+        "url": "MedicationRequest?_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/MedicationRequest&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/Condition?_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose&_summary=count"
+        "url": "Condition?_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/Procedure?_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure&_summary=count"
+        "url": "Procedure?_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/DiagnosticReport?_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/DiagnosticReportLab&_summary=count"
+        "url": "DiagnosticReport?_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/DiagnosticReportLab&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/Observation?_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab&_summary=count"
+        "url": "Observation?_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/ServiceRequest?_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ServiceRequestLab&_summary=count"
+        "url": "ServiceRequest?_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ServiceRequestLab&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/Consent?_profile=https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung&_summary=count"
+        "url": "Consent?_profile=https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/Specimen?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Specimen&_summary=count"
+        "url": "Specimen?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Specimen&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/Procedure?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/extrakorporales-verfahren&_summary=count"
+        "url": "Procedure?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/extrakorporales-verfahren&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/Procedure?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/beatmung&_summary=count"
+        "url": "Procedure?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/beatmung&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/Observation?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/monitoring-und-vitaldaten&_summary=count"
+        "url": "Observation?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/monitoring-und-vitaldaten&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/Observation?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/blutdruck&_summary=count"
+        "url": "Observation?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/blutdruck&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/Observation?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Koerpertemperatur_Generisch&_summary=count"
+        "url": "Observation?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Koerpertemperatur_Generisch&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/Observation?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/sauerstoffsaettigung-im-arteriellen-blut-durch-pulsoxymetrie&_summary=count"
+        "url": "Observation?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/sauerstoffsaettigung-im-arteriellen-blut-durch-pulsoxymetrie&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/Observation?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/herzfrequenz&_summary=count"
+        "url": "Observation?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/herzfrequenz&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/ServiceRequest?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/anforderung-genetischer-test&_summary=count"
+        "url": "ServiceRequest?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/anforderung-genetischer-test&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/DiagnosticReport?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/molekulargenetischer-befundbericht&_summary=count"
+        "url": "DiagnosticReport?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/molekulargenetischer-befundbericht&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/Observation?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/ergebnis-zusammenfassung&_summary=count"
+        "url": "Observation?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/ergebnis-zusammenfassung&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/Observation?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/therapeutische-implikation&_summary=count"
+        "url": "Observation?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/therapeutische-implikation&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/Observation?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/diagnostische-implikation&_summary=count"
+        "url": "Observation?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/diagnostische-implikation&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/Task?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/medikationsempfehlung&_summary=count"
+        "url": "Task?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/medikationsempfehlung&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/Task?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/empfohlene-folgemassnahme&_summary=count"
+        "url": "Task?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/empfohlene-folgemassnahme&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/Observation?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/variante&_summary=count"
+        "url": "Observation?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/variante&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/Observation?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/untersuchte-region&_summary=count"
+        "url": "Observation?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/untersuchte-region&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/Observation?_profile=http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/haplotype&_summary=count"
+        "url": "Observation?_profile=http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/haplotype&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/Observation?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/genotyp&_summary=count"
+        "url": "Observation?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/genotyp&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/Observation?_profile=http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/sequence-phase-relationship&_summary=count"
+        "url": "Observation?_profile=http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/sequence-phase-relationship&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/Observation?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mutationslast&_summary=count"
+        "url": "Observation?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mutationslast&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/Observation?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mikrosatelliteninstabilitaet&_summary=count"
+        "url": "Observation?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mikrosatelliteninstabilitaet&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/FamilyMemberHistory?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/familienanamnese&_summary=count"
+        "url": "FamilyMemberHistory?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/familienanamnese&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/RiskAssessment?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/polygener-risiko-score&_summary=count"
+        "url": "RiskAssessment?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/polygener-risiko-score&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/DiagnosticReport?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-report&_summary=count"
+        "url": "DiagnosticReport?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-report&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/Observation?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-base-observation&_summary=count"
+        "url": "Observation?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-base-observation&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/Observation?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-macroscopic-grouper&_summary=count"
+        "url": "Observation?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-macroscopic-grouper&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/Observation?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-microscopic-grouper&_summary=count"
+        "url": "Observation?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-microscopic-grouper&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/Observation?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-intraoperative-grouper&_summary=count"
+        "url": "Observation?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-intraoperative-grouper&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/Observation?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-diagnostic-conclusion-grouper&_summary=count"
+        "url": "Observation?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-diagnostic-conclusion-grouper&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/Observation?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-additional-specified-grouper&_summary=count"
+        "url": "Observation?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-additional-specified-grouper&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/Observation?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding&_summary=count"
+        "url": "Observation?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/Composition?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-composition&_summary=count"
+        "url": "Composition?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-composition&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/ServiceRequest?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-service-request&_summary=count"
+        "url": "ServiceRequest?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-service-request&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/Specimen?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen&_summary=count"
+        "url": "Specimen?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/List?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-active-problems-list&_summary=count"
+        "url": "List?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-active-problems-list&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/List?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-history-of-present-illness&_summary=count"
+        "url": "List?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-history-of-present-illness&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/Condition?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-problem-list-item&_summary=count"
+        "url": "Condition?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-problem-list-item&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/Media?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-attached-image&_summary=count"
+        "url": "Media?_profile=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-attached-image&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/Encounter?date=eq2000&_summary=count"
+        "url": "Encounter?date=eq2000&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/Encounter?date=eq2001&_summary=count"
+        "url": "Encounter?date=eq2001&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/Encounter?date=eq2002&_summary=count"
+        "url": "Encounter?date=eq2002&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/Encounter?date=eq2003&_summary=count"
+        "url": "Encounter?date=eq2003&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/Encounter?date=eq2004&_summary=count"
+        "url": "Encounter?date=eq2004&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/Encounter?date=eq2005&_summary=count"
+        "url": "Encounter?date=eq2005&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/Encounter?date=eq2006&_summary=count"
+        "url": "Encounter?date=eq2006&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/Encounter?date=eq2007&_summary=count"
+        "url": "Encounter?date=eq2007&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/Encounter?date=eq2008&_summary=count"
+        "url": "Encounter?date=eq2008&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/Encounter?date=eq2009&_summary=count"
+        "url": "Encounter?date=eq2009&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/Encounter?date=eq2010&_summary=count"
+        "url": "Encounter?date=eq2010&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/Encounter?date=eq2011&_summary=count"
+        "url": "Encounter?date=eq2011&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/Encounter?date=eq2012&_summary=count"
+        "url": "Encounter?date=eq2012&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/Encounter?date=eq2013&_summary=count"
+        "url": "Encounter?date=eq2013&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/Encounter?date=eq2014&_summary=count"
+        "url": "Encounter?date=eq2014&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/Encounter?date=eq2015&_summary=count"
+        "url": "Encounter?date=eq2015&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/Encounter?date=eq2016&_summary=count"
+        "url": "Encounter?date=eq2016&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/Encounter?date=eq2017&_summary=count"
+        "url": "Encounter?date=eq2017&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/Encounter?date=eq2018&_summary=count"
+        "url": "Encounter?date=eq2018&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/Encounter?date=eq2019&_summary=count"
+        "url": "Encounter?date=eq2019&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/Encounter?date=eq2020&_summary=count"
+        "url": "Encounter?date=eq2020&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/Encounter?date=eq2021&_summary=count"
+        "url": "Encounter?date=eq2021&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/Encounter?date=eq2022&_summary=count"
+        "url": "Encounter?date=eq2022&_summary=count"
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/Encounter?date=eq2023&_summary=count"
+        "url": "Encounter?date=eq2023&_summary=count"
       }
     },
     {
