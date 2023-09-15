@@ -39,7 +39,7 @@ def append_year_query(query):
         cur_query = {
             "request": {
                 "method": "GET",
-                "url": year_query
+                "url": year_query.strip("/")
             }
         }
 
@@ -61,7 +61,7 @@ for query in report_queries['statusQueries']:
         cur_query = {
             "request": {
                 "method": "GET",
-                "url": query['query']
+                "url": query['query'].strip("/")
             }
         }
 
