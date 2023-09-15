@@ -12,7 +12,7 @@ bundle = {
         ],
         "tag": [
             {
-                "system": "http://highmed.org/fhir/CodeSystem/read-access-tag",
+                "system": "http://dsf.dev/fhir/CodeSystem/read-access-tag",
                 "code": "ALL"
             }
         ]
@@ -22,14 +22,7 @@ bundle = {
         "value": "search-bundle"
     },
     "type": "batch",
-    "entry": [
-        {
-            "request": {
-                "method": "GET",
-                "url": "metadata"
-            }
-        }
-    ]
+    "entry": []
 }
 
 
@@ -73,6 +66,15 @@ for query in report_queries['statusQueries']:
         }
 
         bundle['entry'].append(cur_query)
+
+
+bundle['entry'].append({
+            "request": {
+                "method": "GET",
+                "url": "metadata"
+            }
+        })
+
 
 with open("dsf-search-bundle.json", "w+") as dsf_search_bundle_file:
     json.dump(bundle, dsf_search_bundle_file)

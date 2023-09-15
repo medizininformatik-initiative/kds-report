@@ -8,7 +8,7 @@
     ],
     "tag": [
       {
-        "system": "http://highmed.org/fhir/CodeSystem/read-access-tag",
+        "system": "http://dsf.dev/fhir/CodeSystem/read-access-tag",
         "code": "ALL"
       }
     ]
@@ -19,12 +19,6 @@
   },
   "type": "batch",
   "entry": [
-    {
-      "request": {
-        "method": "GET",
-        "url": "metadata"
-      }
-    },
     {
       "request": {
         "method": "GET",
@@ -539,6 +533,12 @@
       "request": {
         "method": "GET",
         "url": "/Encounter?date=eq2023&_summary=count"
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "url": "metadata"
       }
     }
   ]
