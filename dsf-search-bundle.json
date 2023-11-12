@@ -2,7 +2,7 @@
   "resourceType": "Bundle",
   "meta": {
     "versionId": "1",
-    "lastUpdated": "2023-09-15T10:32:23.727338+02:00",
+    "lastUpdated": "2023-11-12T17:57:27.084202+01:00",
     "profile": [
       "http://medizininformatik-initiative.de/fhir/Bundle/search-bundle-report|1.0"
     ],
