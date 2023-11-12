@@ -10,7 +10,7 @@ A year query is a query which counts the number of overall resources per year of
 
 The following regex describes the allowed urls that can be used as part of the report input-queries:
 ```
-^(((?!=)|_profile=|type=|date=eq[0-9]{4}(?![-])).)*_summary=count
+^(((?!=)|_profile=|_profile:below=|type=|date=[0-9]{4}(?![-])).)*_summary=count
 ```
 
 ## Counting queries
