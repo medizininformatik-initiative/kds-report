@@ -9,7 +9,7 @@ bundle = {
         "versionId": "1",
         "lastUpdated": datetime.now(pytz.timezone('Europe/Berlin')).isoformat(),
         "profile": [
-            "http://medizininformatik-initiative.de/fhir/Bundle/search-bundle-report|1.0"
+            "http://medizininformatik-initiative.de/fhir/Bundle/search-bundle-report|1.1"
         ],
         "tag": [
             {
@@ -20,7 +20,7 @@ bundle = {
     },
     "identifier": {
         "system": "http://medizininformatik-initiative.de/fhir/CodeSystem/report",
-        "value": "search-bundle"
+        "value": "search-bundle-v1.1"
     },
     "type": "batch",
     "entry": []
@@ -28,7 +28,7 @@ bundle = {
 
 
 def append_year_query(query):
-    
+
     cur_year = query['startYear']
     last_year = date.today().year
 
