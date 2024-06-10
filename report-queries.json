@@ -1,11 +1,86 @@
 {
   "siteName": "my-site-name",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "datetime": "",
   "capabilityStatement": {
     "software": {}
   },
   "statusQueries":[
+    {
+      "name": "Medikation-mii-pzn",
+      "type": "count",
+      "query": "/Medication?code=http://fhir.de/CodeSystem/ifa/pzn|&_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication&_summary=count"
+    },
+    {
+      "name": "Medikation-mii-atcDe",
+      "type": "count",
+      "query": "/Medication?code=http://fhir.de/CodeSystem/bfarm/atc|&_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication&_summary=count"
+    },
+    {
+      "name": "Medikation-mii-atcEn",
+      "type": "count",
+      "query": "/Medication?code=http://www.whocc.no/atc|&_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication&_summary=count"
+    },
+    {
+      "name": "Medikation-mii-ingredient-ask",
+      "type": "count",
+      "query": "/Medication?ingredient-code=http://fhir.de/CodeSystem/ask|&_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication&_summary=count"
+    },
+    {
+      "name": "Medikation-mii-ingredient-unii",
+      "type": "count",
+      "query": "/Medication?ingredient-code=http://fdasis.nlm.nih.gov|&_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication&_summary=count"
+    },
+    {
+      "name": "Medikation-mii-ingredient-cas",
+      "type": "count",
+      "query": "/Medication?ingredient-code=urn:oid:2.16.840.1.113883.6.61|&_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication&_summary=count"
+    },
+    {
+      "name": "Medikation-mii-ingredient-sct",
+      "type": "count",
+      "query": "/Medication?ingredient-code=http://snomed.info/sct|&_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication&_summary=count"
+    },
+    {
+      "name": "Labor-mii-loinc",
+      "type": "count",
+      "query": "/Observation?code=http://loinc.org|&_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLa&_summary=count"
+    },
+    {
+      "name": "Diagnose-Condition-mii-icd10",
+      "type": "count",
+      "query": "/Condition?code=http://fhir.de/CodeSystem/bfarm/icd-10-gm|&_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose&_summary=count"
+    },
+    {
+      "name": "Diagnose-Condition-mii-alphaid",
+      "type": "count",
+      "query": "/Condition?code=http://fhir.de/CodeSystem/bfarm/alpha-id|&_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose&_summary=count"
+    },
+    {
+      "name": "Diagnose-Condition-mii-sct",
+      "type": "count",
+      "query": "/Condition?code=http://snomed.info/sct|&_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose&_summary=count"
+    },
+    {
+      "name": "Diagnose-Condition-mii-orphanet",
+      "type": "count",
+      "query": "/Condition?code=http://www.orpha.net|&_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose&_summary=count"
+    },
+    {
+      "name": "Diagnose-Condition-mii-icdo3",
+      "type": "count",
+      "query": "/Condition?code=http://terminology.hl7.org/CodeSystem/icd-o-3dps|&_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose&_summary=count"
+    },
+    {
+      "name": "Prozedur-Procedure-mii-ops",
+      "type": "count",
+      "query": "/Procedure?code=http://fhir.de/CodeSystem/bfarm/ops|&_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure&_summary=count"
+    },
+    {
+      "name": "Prozedur-Procedure-mii-sct",
+      "type": "count",
+      "query": "/Procedure?code=http://snomed.info/sct|&_profile=https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure&_summary=count"
+    },
     {
       "name": "Person-Patient-mii",
       "type": "count",
