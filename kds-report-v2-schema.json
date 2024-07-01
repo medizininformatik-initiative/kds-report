@@ -102,6 +102,12 @@
             "year"
           ]
         },
+        "category": {
+          "enum": [
+            "system",
+            "profile"
+          ]
+        },
         "query": {
           "type": "string"
         },
@@ -115,7 +121,8 @@
       "required": [
         "type",
         "query",
-        "status"
+        "status",
+        "category"
       ],
       "allOf": [
         {

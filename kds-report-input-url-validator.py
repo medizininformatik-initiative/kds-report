@@ -2,7 +2,7 @@ import json
 import re
 
 
-kds_validation_regex = "^(((?!=)|_profile=|_profile:below=|type=|date=[0-9]{4}(?![-])).)*_summary=count"
+kds_validation_regex = "^([^=]|_profile=|code=([^=]*)\\|&|_profile:below=|type=|date=[0-9]{4}(?![-]))*_summary=count"
 kds_report_input_urls = {}
 
 with open("report-queries.json", "r") as url_file:

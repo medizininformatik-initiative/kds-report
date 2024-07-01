@@ -4,6 +4,15 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
+
+## [2.0.0] - 2024-06-10
+
+### Added
+
+- Added "category" field to queries ([#9](https://github.com/medizininformatik-initiative/kds-report/issues/9))
+- Changed queries to use :below modifier ([#10](https://github.com/medizininformatik-initiative/kds-report/issues/10))
+
+
 ## [1.1.0] - 2024-06-10
 
 ### Added
