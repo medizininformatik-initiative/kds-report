@@ -2,7 +2,7 @@
     "resourceType": "Bundle",
     "meta": {
         "versionId": "1",
-        "lastUpdated": "2024-06-21T13:26:59.772030+02:00",
+        "lastUpdated": "2024-07-03T15:12:36.493552+02:00",
         "profile": [
             "http://medizininformatik-initiative.de/fhir/Bundle/search-bundle-report|1.1"
         ],
@@ -178,19 +178,7 @@
         {
             "request": {
                 "method": "GET",
-                "url": "Encounter?_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung&type=http://fhir.de/CodeSystem/Kontaktebene|einrichtungskontakt&_summary=count"
-            }
-        },
-        {
-            "request": {
-                "method": "GET",
-                "url": "Encounter?_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung&type=http://fhir.de/CodeSystem/Kontaktebene|abteilungskontakt&_summary=count"
-            }
-        },
-        {
-            "request": {
-                "method": "GET",
-                "url": "Encounter?_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung&type=http://fhir.de/CodeSystem/Kontaktebene|versorgungsstellenkontakt&_summary=count"
+                "url": "Encounter?_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung&_summary=count"
             }
         },
         {

@@ -163,22 +163,10 @@
       "query": "/Condition?_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Todesursache&_summary=count"
     },
     {
-      "name": "Fall-Einrichtung-mii",
+      "name": "Fall-KontaktGesundheiteinrichtung-mii",
       "type": "count",
       "category": "profile",
-      "query": "/Encounter?_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung&type=http://fhir.de/CodeSystem/Kontaktebene|einrichtungskontakt&_summary=count"
-    },
-    {
-      "name": "Fall-Abteilung-mii",
-      "type": "count",
-      "category": "profile",
-      "query": "/Encounter?_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung&type=http://fhir.de/CodeSystem/Kontaktebene|abteilungskontakt&_summary=count"
-    },
-    {
-      "name": "Fall-Versorgung-mii",
-      "type": "count",
-      "category": "profile",
-      "query": "/Encounter?_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung&type=http://fhir.de/CodeSystem/Kontaktebene|versorgungsstellenkontakt&_summary=count"
+      "query": "/Encounter?_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung&_summary=count"
     },
     {
       "name": "Medikation-Statement-mii",
