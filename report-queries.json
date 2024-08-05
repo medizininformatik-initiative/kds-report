@@ -472,7 +472,7 @@
       "name": "Jahresabfrage-Fall",
       "type": "year",
       "category": "profile",
-      "query": "/Encounter?_summary=count",
+      "query": "/Encounter?_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung&type=http://fhir.de/CodeSystem/Kontaktebene|einrichtungskontakt&_summary=count",
       "dateParam": "date",
       "startYear": 2000
     }

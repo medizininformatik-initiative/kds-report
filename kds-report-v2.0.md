@@ -10,7 +10,11 @@ A year query is a query which counts the number of overall resources per year of
 
 The following regex describes the allowed urls that can be used as part of the report input-queries:
 ```
+<<<<<<< Updated upstream
 ^(((?!=)|_profile=|_profile:below=|type=|date=[0-9]{4}(?![-])).)*_summary=count
+=======
+^\/(((ResearchSubject|MedicationStatement|ServiceRequest|FamilyMemberHistory|Observation|DiagnosticReport|Patient|Composition|MedicationAdministration|Condition|MedicationRequest|Medication|List|RiskAssessment|Media|Procedure|Task|Consent|Specimen)\?(^_summary|[^=]|_profile=|code=([^=]*)\|&|_profile:below=|type=([^=]*)\|&|date=[0-9]{4}(?![-]))*)|((Encounter)\?(^_summary|[^=]|_profile=|code=([^=]*)\|&|_profile:below=|type=|date=[0-9]{4}(?![-]))*))_summary=count
+>>>>>>> Stashed changes
 ```
 
 ## Counting queries
