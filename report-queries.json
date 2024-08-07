@@ -1,11 +1,11 @@
 {
   "siteName": "my-site-name",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "datetime": "",
   "capabilityStatement": {
     "software": {}
   },
-  "statusQueries":[
+  "statusQueries": [
     {
       "name": "Medikation-mii-pzn",
       "type": "count",
@@ -384,67 +384,67 @@
       "category": "profile",
       "query": "/DiagnosticReport?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-report&_summary=count"
     },
-   {
+    {
       "name": "Patho-Base-mii",
       "type": "count",
       "category": "profile",
       "query": "/Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-base-observation&_summary=count"
     },
-       {
+    {
       "name": "Patho-Macroscopic-mii",
       "type": "count",
       "category": "profile",
       "query": "/Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-macroscopic-grouper&_summary=count"
     },
-       {
+    {
       "name": "Patho-Microscopic-mii",
       "type": "count",
       "category": "profile",
       "query": "/Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-microscopic-grouper&_summary=count"
     },
-       {
+    {
       "name": "Patho-Intraoperative-mii",
       "type": "count",
       "category": "profile",
       "query": "/Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-intraoperative-grouper&_summary=count"
     },
-       {
+    {
       "name": "Patho-DiagnosticConclusion-mii",
       "type": "count",
       "category": "profile",
       "query": "/Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-diagnostic-conclusion-grouper&_summary=count"
     },
-       {
+    {
       "name": "Patho-AdditionalSpecified-mii",
       "type": "count",
       "category": "profile",
       "query": "/Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-additional-specified-grouper&_summary=count"
     },
-       {
+    {
       "name": "Patho-Finding-mii",
       "type": "count",
       "category": "profile",
       "query": "/Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-finding&_summary=count"
     },
-       {
+    {
       "name": "Patho-Composition-mii",
       "type": "count",
       "category": "profile",
       "query": "/Composition?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-composition&_summary=count"
     },
-       {
+    {
       "name": "Patho-ServiceRequest-mii",
       "type": "count",
       "category": "profile",
       "query": "/ServiceRequest?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-service-request&_summary=count"
     },
-       {
+    {
       "name": "Patho-Specimen-mii",
       "type": "count",
       "category": "profile",
       "query": "/Specimen?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-specimen&_summary=count"
     },
-       {
+    {
       "name": "Patho-ActiveProblems-mii",
       "type": "count",
       "category": "profile",
@@ -472,7 +472,7 @@
       "name": "Jahresabfrage-Fall",
       "type": "year",
       "category": "profile",
-      "query": "/Encounter?_summary=count",
+      "query": "/Encounter?_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung&type=http://fhir.de/CodeSystem/Kontaktebene|einrichtungskontakt&_summary=count",
       "dateParam": "date",
       "startYear": 2000
     }

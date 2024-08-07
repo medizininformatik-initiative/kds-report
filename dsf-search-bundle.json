@@ -2,7 +2,7 @@
     "resourceType": "Bundle",
     "meta": {
         "versionId": "1",
-        "lastUpdated": "2024-06-21T13:26:59.772030+02:00",
+        "lastUpdated": "2024-08-07T12:23:07.803972+02:00",
         "profile": [
             "http://medizininformatik-initiative.de/fhir/Bundle/search-bundle-report|1.1"
         ],
@@ -484,151 +484,151 @@
         {
             "request": {
                 "method": "GET",
-                "url": "Encounter?date=eq2000&_summary=count"
+                "url": "Encounter?date=eq2000&_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung&type=http://fhir.de/CodeSystem/Kontaktebene|einrichtungskontakt&_summary=count"
             }
         },
         {
             "request": {
                 "method": "GET",
-                "url": "Encounter?date=eq2001&_summary=count"
+                "url": "Encounter?date=eq2001&_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung&type=http://fhir.de/CodeSystem/Kontaktebene|einrichtungskontakt&_summary=count"
             }
         },
         {
             "request": {
                 "method": "GET",
-                "url": "Encounter?date=eq2002&_summary=count"
+                "url": "Encounter?date=eq2002&_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung&type=http://fhir.de/CodeSystem/Kontaktebene|einrichtungskontakt&_summary=count"
             }
         },
         {
             "request": {
                 "method": "GET",
-                "url": "Encounter?date=eq2003&_summary=count"
+                "url": "Encounter?date=eq2003&_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung&type=http://fhir.de/CodeSystem/Kontaktebene|einrichtungskontakt&_summary=count"
             }
         },
         {
             "request": {
                 "method": "GET",
-                "url": "Encounter?date=eq2004&_summary=count"
+                "url": "Encounter?date=eq2004&_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung&type=http://fhir.de/CodeSystem/Kontaktebene|einrichtungskontakt&_summary=count"
             }
         },
         {
             "request": {
                 "method": "GET",
-                "url": "Encounter?date=eq2005&_summary=count"
+                "url": "Encounter?date=eq2005&_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung&type=http://fhir.de/CodeSystem/Kontaktebene|einrichtungskontakt&_summary=count"
             }
         },
         {
             "request": {
                 "method": "GET",
-                "url": "Encounter?date=eq2006&_summary=count"
+                "url": "Encounter?date=eq2006&_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung&type=http://fhir.de/CodeSystem/Kontaktebene|einrichtungskontakt&_summary=count"
             }
         },
         {
             "request": {
                 "method": "GET",
-                "url": "Encounter?date=eq2007&_summary=count"
+                "url": "Encounter?date=eq2007&_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung&type=http://fhir.de/CodeSystem/Kontaktebene|einrichtungskontakt&_summary=count"
             }
         },
         {
             "request": {
                 "method": "GET",
-                "url": "Encounter?date=eq2008&_summary=count"
+                "url": "Encounter?date=eq2008&_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung&type=http://fhir.de/CodeSystem/Kontaktebene|einrichtungskontakt&_summary=count"
             }
         },
         {
             "request": {
                 "method": "GET",
-                "url": "Encounter?date=eq2009&_summary=count"
+                "url": "Encounter?date=eq2009&_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung&type=http://fhir.de/CodeSystem/Kontaktebene|einrichtungskontakt&_summary=count"
             }
         },
         {
             "request": {
                 "method": "GET",
-                "url": "Encounter?date=eq2010&_summary=count"
+                "url": "Encounter?date=eq2010&_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung&type=http://fhir.de/CodeSystem/Kontaktebene|einrichtungskontakt&_summary=count"
             }
         },
         {
             "request": {
                 "method": "GET",
-                "url": "Encounter?date=eq2011&_summary=count"
+                "url": "Encounter?date=eq2011&_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung&type=http://fhir.de/CodeSystem/Kontaktebene|einrichtungskontakt&_summary=count"
             }
         },
         {
             "request": {
                 "method": "GET",
-                "url": "Encounter?date=eq2012&_summary=count"
+                "url": "Encounter?date=eq2012&_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung&type=http://fhir.de/CodeSystem/Kontaktebene|einrichtungskontakt&_summary=count"
             }
         },
         {
             "request": {
                 "method": "GET",
-                "url": "Encounter?date=eq2013&_summary=count"
+                "url": "Encounter?date=eq2013&_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung&type=http://fhir.de/CodeSystem/Kontaktebene|einrichtungskontakt&_summary=count"
             }
         },
         {
             "request": {
                 "method": "GET",
-                "url": "Encounter?date=eq2014&_summary=count"
+                "url": "Encounter?date=eq2014&_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung&type=http://fhir.de/CodeSystem/Kontaktebene|einrichtungskontakt&_summary=count"
             }
         },
         {
             "request": {
                 "method": "GET",
-                "url": "Encounter?date=eq2015&_summary=count"
+                "url": "Encounter?date=eq2015&_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung&type=http://fhir.de/CodeSystem/Kontaktebene|einrichtungskontakt&_summary=count"
             }
         },
         {
             "request": {
                 "method": "GET",
-                "url": "Encounter?date=eq2016&_summary=count"
+                "url": "Encounter?date=eq2016&_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung&type=http://fhir.de/CodeSystem/Kontaktebene|einrichtungskontakt&_summary=count"
             }
         },
         {
             "request": {
                 "method": "GET",
-                "url": "Encounter?date=eq2017&_summary=count"
+                "url": "Encounter?date=eq2017&_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung&type=http://fhir.de/CodeSystem/Kontaktebene|einrichtungskontakt&_summary=count"
             }
         },
         {
             "request": {
                 "method": "GET",
-                "url": "Encounter?date=eq2018&_summary=count"
+                "url": "Encounter?date=eq2018&_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung&type=http://fhir.de/CodeSystem/Kontaktebene|einrichtungskontakt&_summary=count"
             }
         },
         {
             "request": {
                 "method": "GET",
-                "url": "Encounter?date=eq2019&_summary=count"
+                "url": "Encounter?date=eq2019&_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung&type=http://fhir.de/CodeSystem/Kontaktebene|einrichtungskontakt&_summary=count"
             }
         },
         {
             "request": {
                 "method": "GET",
-                "url": "Encounter?date=eq2020&_summary=count"
+                "url": "Encounter?date=eq2020&_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung&type=http://fhir.de/CodeSystem/Kontaktebene|einrichtungskontakt&_summary=count"
             }
         },
         {
             "request": {
                 "method": "GET",
-                "url": "Encounter?date=eq2021&_summary=count"
+                "url": "Encounter?date=eq2021&_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung&type=http://fhir.de/CodeSystem/Kontaktebene|einrichtungskontakt&_summary=count"
             }
         },
         {
             "request": {
                 "method": "GET",
-                "url": "Encounter?date=eq2022&_summary=count"
+                "url": "Encounter?date=eq2022&_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung&type=http://fhir.de/CodeSystem/Kontaktebene|einrichtungskontakt&_summary=count"
             }
         },
         {
             "request": {
                 "method": "GET",
-                "url": "Encounter?date=eq2023&_summary=count"
+                "url": "Encounter?date=eq2023&_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung&type=http://fhir.de/CodeSystem/Kontaktebene|einrichtungskontakt&_summary=count"
             }
         },
         {
             "request": {
                 "method": "GET",
-                "url": "Encounter?date=eq2024&_summary=count"
+                "url": "Encounter?date=eq2024&_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung&type=http://fhir.de/CodeSystem/Kontaktebene|einrichtungskontakt&_summary=count"
             }
         },
         {
