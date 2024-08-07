@@ -1,11 +1,11 @@
 {
-    "siteName": "DIZ1",
-    "version": "2.0.0",
-    "datetime": "2024-06-10T16:23:28",
+    "siteName": "diz-1.dev.forschen-fuer-gesundheit.de",
+    "version": "2.0.1",
+    "datetime": "2024-08-05T13:25:59",
     "capabilityStatement": {
         "software": {
             "name": "Blaze",
-            "version": "0.25.0"
+            "version": "0.28.0"
         },
         "instantiates": [],
         "restResources": [
@@ -303,6 +303,126 @@
                 ]
             },
             {
+                "type": "Encounter",
+                "searchParam": [
+                    {
+                        "name": "based-on",
+                        "definition": "http://hl7.org/fhir/SearchParameter/Encounter-based-on",
+                        "type": "reference"
+                    },
+                    {
+                        "name": "reason-reference",
+                        "definition": "http://hl7.org/fhir/SearchParameter/Encounter-reason-reference",
+                        "type": "reference"
+                    },
+                    {
+                        "name": "service-provider",
+                        "definition": "http://hl7.org/fhir/SearchParameter/Encounter-service-provider",
+                        "type": "reference"
+                    },
+                    {
+                        "name": "class",
+                        "definition": "http://hl7.org/fhir/SearchParameter/Encounter-class",
+                        "type": "token"
+                    },
+                    {
+                        "name": "practitioner",
+                        "definition": "http://hl7.org/fhir/SearchParameter/Encounter-practitioner",
+                        "type": "reference"
+                    },
+                    {
+                        "name": "diagnosis",
+                        "definition": "http://hl7.org/fhir/SearchParameter/Encounter-diagnosis",
+                        "type": "reference"
+                    },
+                    {
+                        "name": "part-of",
+                        "definition": "http://hl7.org/fhir/SearchParameter/Encounter-part-of",
+                        "type": "reference"
+                    },
+                    {
+                        "name": "special-arrangement",
+                        "definition": "http://hl7.org/fhir/SearchParameter/Encounter-special-arrangement",
+                        "type": "token"
+                    },
+                    {
+                        "name": "location",
+                        "definition": "http://hl7.org/fhir/SearchParameter/Encounter-location",
+                        "type": "reference"
+                    },
+                    {
+                        "name": "participant",
+                        "definition": "http://hl7.org/fhir/SearchParameter/Encounter-participant",
+                        "type": "reference"
+                    },
+                    {
+                        "name": "episode-of-care",
+                        "definition": "http://hl7.org/fhir/SearchParameter/Encounter-episode-of-care",
+                        "type": "reference"
+                    },
+                    {
+                        "name": "status",
+                        "definition": "http://hl7.org/fhir/SearchParameter/Encounter-status",
+                        "type": "token"
+                    },
+                    {
+                        "name": "identifier",
+                        "definition": "http://hl7.org/fhir/SearchParameter/clinical-identifier",
+                        "type": "token"
+                    },
+                    {
+                        "name": "subject",
+                        "definition": "http://hl7.org/fhir/SearchParameter/Encounter-subject",
+                        "type": "reference"
+                    },
+                    {
+                        "name": "account",
+                        "definition": "http://hl7.org/fhir/SearchParameter/Encounter-account",
+                        "type": "reference"
+                    },
+                    {
+                        "name": "length",
+                        "definition": "http://hl7.org/fhir/SearchParameter/Encounter-length",
+                        "type": "quantity"
+                    },
+                    {
+                        "name": "type",
+                        "definition": "http://hl7.org/fhir/SearchParameter/clinical-type",
+                        "type": "token"
+                    },
+                    {
+                        "name": "appointment",
+                        "definition": "http://hl7.org/fhir/SearchParameter/Encounter-appointment",
+                        "type": "reference"
+                    },
+                    {
+                        "name": "date",
+                        "definition": "http://hl7.org/fhir/SearchParameter/clinical-date",
+                        "type": "date"
+                    },
+                    {
+                        "name": "location-period",
+                        "definition": "http://hl7.org/fhir/SearchParameter/Encounter-location-period",
+                        "type": "date"
+                    },
+                    {
+                        "name": "patient",
+                        "definition": "http://hl7.org/fhir/SearchParameter/clinical-patient",
+                        "type": "reference"
+                    },
+                    {
+                        "name": "reason-code",
+                        "definition": "http://hl7.org/fhir/SearchParameter/Encounter-reason-code",
+                        "type": "token"
+                    },
+                    {
+                        "name": "participant-type",
+                        "definition": "http://hl7.org/fhir/SearchParameter/Encounter-participant-type",
+                        "type": "token"
+                    }
+                ]
+            },
+            {
                 "type": "Medication",
                 "searchParam": [
                     {
@@ -479,6 +599,190 @@
                         "name": "effective",
                         "definition": "http://hl7.org/fhir/SearchParameter/MedicationStatement-effective",
                         "type": "date"
+                    }
+                ]
+            },
+            {
+                "type": "Observation",
+                "searchParam": [
+                    {
+                        "name": "component-value-quantity",
+                        "definition": "http://hl7.org/fhir/SearchParameter/Observation-component-value-quantity",
+                        "type": "quantity"
+                    },
+                    {
+                        "name": "device",
+                        "definition": "http://hl7.org/fhir/SearchParameter/Observation-device",
+                        "type": "reference"
+                    },
+                    {
+                        "name": "component-value-concept",
+                        "definition": "http://hl7.org/fhir/SearchParameter/Observation-component-value-concept",
+                        "type": "token"
+                    },
+                    {
+                        "name": "code-value-quantity",
+                        "definition": "http://hl7.org/fhir/SearchParameter/Observation-code-value-quantity",
+                        "type": "composite"
+                    },
+                    {
+                        "name": "based-on",
+                        "definition": "http://hl7.org/fhir/SearchParameter/Observation-based-on",
+                        "type": "reference"
+                    },
+                    {
+                        "name": "combo-data-absent-reason",
+                        "definition": "http://hl7.org/fhir/SearchParameter/Observation-combo-data-absent-reason",
+                        "type": "token"
+                    },
+                    {
+                        "name": "has-member",
+                        "definition": "http://hl7.org/fhir/SearchParameter/Observation-has-member",
+                        "type": "reference"
+                    },
+                    {
+                        "name": "component-code-value-quantity",
+                        "definition": "http://hl7.org/fhir/SearchParameter/Observation-component-code-value-quantity",
+                        "type": "composite"
+                    },
+                    {
+                        "name": "component-data-absent-reason",
+                        "definition": "http://hl7.org/fhir/SearchParameter/Observation-component-data-absent-reason",
+                        "type": "token"
+                    },
+                    {
+                        "name": "method",
+                        "definition": "http://hl7.org/fhir/SearchParameter/Observation-method",
+                        "type": "token"
+                    },
+                    {
+                        "name": "focus",
+                        "definition": "http://hl7.org/fhir/SearchParameter/Observation-focus",
+                        "type": "reference"
+                    },
+                    {
+                        "name": "component-code-value-concept",
+                        "definition": "http://hl7.org/fhir/SearchParameter/Observation-component-code-value-concept",
+                        "type": "composite"
+                    },
+                    {
+                        "name": "value-date",
+                        "definition": "http://hl7.org/fhir/SearchParameter/Observation-value-date",
+                        "type": "date"
+                    },
+                    {
+                        "name": "combo-code",
+                        "definition": "http://hl7.org/fhir/SearchParameter/Observation-combo-code",
+                        "type": "token"
+                    },
+                    {
+                        "name": "encounter",
+                        "definition": "http://hl7.org/fhir/SearchParameter/clinical-encounter",
+                        "type": "reference"
+                    },
+                    {
+                        "name": "value-quantity",
+                        "definition": "http://hl7.org/fhir/SearchParameter/Observation-value-quantity",
+                        "type": "quantity"
+                    },
+                    {
+                        "name": "part-of",
+                        "definition": "http://hl7.org/fhir/SearchParameter/Observation-part-of",
+                        "type": "reference"
+                    },
+                    {
+                        "name": "combo-value-concept",
+                        "definition": "http://hl7.org/fhir/SearchParameter/Observation-combo-value-concept",
+                        "type": "token"
+                    },
+                    {
+                        "name": "component-code",
+                        "definition": "http://hl7.org/fhir/SearchParameter/Observation-component-code",
+                        "type": "token"
+                    },
+                    {
+                        "name": "status",
+                        "definition": "http://hl7.org/fhir/SearchParameter/Observation-status",
+                        "type": "token"
+                    },
+                    {
+                        "name": "identifier",
+                        "definition": "http://hl7.org/fhir/SearchParameter/clinical-identifier",
+                        "type": "token"
+                    },
+                    {
+                        "name": "subject",
+                        "definition": "http://hl7.org/fhir/SearchParameter/Observation-subject",
+                        "type": "reference"
+                    },
+                    {
+                        "name": "specimen",
+                        "definition": "http://hl7.org/fhir/SearchParameter/Observation-specimen",
+                        "type": "reference"
+                    },
+                    {
+                        "name": "combo-value-quantity",
+                        "definition": "http://hl7.org/fhir/SearchParameter/Observation-combo-value-quantity",
+                        "type": "quantity"
+                    },
+                    {
+                        "name": "value-string",
+                        "type": "string"
+                    },
+                    {
+                        "name": "date",
+                        "definition": "http://hl7.org/fhir/SearchParameter/clinical-date",
+                        "type": "date"
+                    },
+                    {
+                        "name": "combo-code-value-quantity",
+                        "definition": "http://hl7.org/fhir/SearchParameter/Observation-combo-code-value-quantity",
+                        "type": "composite"
+                    },
+                    {
+                        "name": "patient",
+                        "definition": "http://hl7.org/fhir/SearchParameter/clinical-patient",
+                        "type": "reference"
+                    },
+                    {
+                        "name": "category",
+                        "definition": "http://hl7.org/fhir/SearchParameter/Observation-category",
+                        "type": "token"
+                    },
+                    {
+                        "name": "data-absent-reason",
+                        "definition": "http://hl7.org/fhir/SearchParameter/Observation-data-absent-reason",
+                        "type": "token"
+                    },
+                    {
+                        "name": "value-concept",
+                        "definition": "http://hl7.org/fhir/SearchParameter/Observation-value-concept",
+                        "type": "token"
+                    },
+                    {
+                        "name": "code-value-concept",
+                        "definition": "http://hl7.org/fhir/SearchParameter/Observation-code-value-concept",
+                        "type": "composite"
+                    },
+                    {
+                        "name": "code",
+                        "definition": "http://hl7.org/fhir/SearchParameter/clinical-code",
+                        "type": "token"
+                    },
+                    {
+                        "name": "derived-from",
+                        "definition": "http://hl7.org/fhir/SearchParameter/Observation-derived-from",
+                        "type": "reference"
+                    },
+                    {
+                        "name": "combo-code-value-concept",
+                        "definition": "http://hl7.org/fhir/SearchParameter/Observation-combo-code-value-concept",
+                        "type": "composite"
+                    },
+                    {
+                        "name": "performer",
+                        "definition": "http://hl7.org/fhir/SearchParameter/Observation-performer",
+                        "type": "reference"
                     }
                 ]
             },
@@ -1038,7 +1342,7 @@
             "name": "Person-Patient-mii-version1",
             "type": "count",
             "category": "profile",
-            "query": "/Patient?_profile:below:below=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient|1&_summary=count",
+            "query": "/Patient?_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient|1&_summary=count",
             "status": "success",
             "response": 0
         },
@@ -1046,7 +1350,7 @@
             "name": "Person-Patient-mii-version2",
             "type": "count",
             "category": "profile",
-            "query": "/Patient?_profile:below:below=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient|2&_summary=count",
+            "query": "/Patient?_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Patient|2&_summary=count",
             "status": "success",
             "response": 0
         },
@@ -1070,7 +1374,7 @@
             "name": "Person-Researchsubject-mii-version1",
             "type": "count",
             "category": "profile",
-            "query": "/ResearchSubject?_profile:below:below=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/ResearchSubject|1&_summary=count",
+            "query": "/ResearchSubject?_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/ResearchSubject|1&_summary=count",
             "status": "success",
             "response": 0
         },
@@ -1078,7 +1382,7 @@
             "name": "Person-Researchsubject-mii-version2",
             "type": "count",
             "category": "profile",
-            "query": "/ResearchSubject?_profile:below:below=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/ResearchSubject|2&_summary=count",
+            "query": "/ResearchSubject?_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/ResearchSubject|2&_summary=count",
             "status": "success",
             "response": 0
         },
@@ -1094,7 +1398,7 @@
             "name": "Person-Vitalstatus-mii-version1",
             "type": "count",
             "category": "profile",
-            "query": "/Observation?_profile:below:below=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus|1&_summary=count",
+            "query": "/Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus|1&_summary=count",
             "status": "success",
             "response": 0
         },
@@ -1102,7 +1406,7 @@
             "name": "Person-Vitalstatus-mii-version2",
             "type": "count",
             "category": "profile",
-            "query": "/Observation?_profile:below:below=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus|2&_summary=count",
+            "query": "/Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-person/StructureDefinition/Vitalstatus|2&_summary=count",
             "status": "success",
             "response": 0
         },
@@ -1527,7 +1831,7 @@
             "type": "year",
             "category": "profile",
             "name": "Jahresabfrage-Fall",
-            "query": "/Encounter?_summary=count",
+            "query": "/Encounter?_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung&type=http://fhir.de/CodeSystem/Kontaktebene|einrichtungskontakt&_summary=count",
             "dateParam": "date",
             "responseByYear": [
                 {
@@ -1627,7 +1931,7 @@
                 },
                 {
                     "year": 2019,
-                    "response": 56,
+                    "response": 0,
                     "status": "success"
                 },
                 {
@@ -1637,7 +1941,7 @@
                 },
                 {
                     "year": 2021,
-                    "response": 48,
+                    "response": 0,
                     "status": "success"
                 },
                 {
