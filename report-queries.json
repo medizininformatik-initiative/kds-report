@@ -52,7 +52,7 @@
       "name": "Labor-mii-loinc",
       "type": "count",
       "category": "system",
-      "query": "/Observation?code=http://loinc.org|&_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLa&_summary=count"
+      "query": "/Observation?code=http://loinc.org|&_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/ObservationLab&_summary=count"
     },
     {
       "name": "Diagnose-Condition-mii-icd10",
