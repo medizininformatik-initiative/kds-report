@@ -1,6 +1,6 @@
 {
   "siteName": "my-site-name",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "datetime": "",
   "capabilityStatement": {
     "software": {}
@@ -468,6 +468,96 @@
       "category": "profile",
       "query": "/Media?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-attached-image&_summary=count"
     },
+    {
+      "name": "Bild-Radiologischer-Befund-mii",
+      "type": "count",
+      "category": "profile",
+      "query": "/DiagnosticReport?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologischer-befund&_summary=count"
+    },
+    {
+      "name": "Bild-Bildgebungsstudie-mii",
+      "type": "count",
+      "category": "profile",
+      "query": "/ImagingStudy?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsstudie&_summary=count"
+    },
+    {
+      "name": "ICU-Atemfrequenz-mii",
+      "type": "count",
+      "category": "profile",
+      "query": "/Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/atemfrequenz&_summary=count"
+    },
+    {
+      "name": "ICU-Arterieller-Blutdruck-mii",
+      "type": "count",
+      "category": "profile",
+      "query": "/Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/arterieller-druck&_summary=count"
+    },
+    {
+      "name": "Med.Forsch.Vorh.-studie-mii",
+      "type": "count",
+      "category": "profile",
+      "query": "/ResearchStudy?_profile:below=https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-pr-studie-studie&_summary=count"
+    },
+    {
+      "name": "Mikrobio-Diagnostic-Report-mii",
+      "type": "count",
+      "category": "profile",
+      "query": "/DiagnosticReport?_profile:below=https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-diagnostic-report&_summary=count"
+    },
+    {
+      "name": "Mikrobio-Kultur_Nachweis-mii",
+      "type": "count",
+      "category": "profile",
+      "query": "/Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-kultur-nachweis&_summary=count"
+    },
+    {
+      "name": "Mikrobio-Empfindlichkeit-mii",
+      "type": "count",
+      "category": "profile",
+      "query": "/Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-empfindlichkeit&_summary=count"
+    },
+    {
+      "name": "Molgen-MolekulargenetischerBefundbericht-mii",
+      "type": "count",
+      "category": "profile",
+      "query": "/DiagnosticReport?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/molekulargenetischer-befundbericht&_summary=count"
+    },
+    {
+      "name": "Onko-Diagnose-mii",
+      "type": "count",
+      "category": "profile",
+      "query": "/Condition?_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose&_summary=count"
+    },
+    {
+      "name": "Onko-Grading-mii",
+      "type": "count",
+      "category": "profile",
+      "query": "Observation/?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-grading&_summary=count"
+    },
+    {
+      "name": "Onko_TNM_T_Kategorie-mii",
+      "type": "count",
+      "category": "profile",
+      "query": "Observation/?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-t-kategorie&_summary=count"
+    },
+    {
+      "name": "Onko-TNM_N_Kategorie-mii",
+      "type": "count",
+      "category": "profile",
+      "query": "/Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-n-kategorie&_summary=count"
+    },
+    {
+      "name": "Onko-TNM_M_Kategorie-mii",
+      "type": "count",
+      "category": "profile",
+      "query": "/Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-m-kategorie&_summary=count"
+    },
+    {
+      "name": "Onko-Fernmetastasen-mii",
+      "type": "count",
+      "category": "profile",
+      "query": "/Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-fernmetastasen&_summary=count"
+    },  
     {
       "name": "Jahresabfrage-Fall",
       "type": "year",
