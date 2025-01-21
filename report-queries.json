@@ -1,6 +1,6 @@
 {
   "siteName": "my-site-name",
-  "version": "2.1.0",
+  "version": "2.0.1",
   "datetime": "",
   "capabilityStatement": {
     "software": {}
@@ -532,13 +532,13 @@
       "name": "Onko-Grading-mii",
       "type": "count",
       "category": "profile",
-      "query": "Observation/?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-grading&_summary=count"
+      "query": "/Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-grading&_summary=count"
     },
     {
       "name": "Onko_TNM_T_Kategorie-mii",
       "type": "count",
       "category": "profile",
-      "query": "Observation/?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-t-kategorie&_summary=count"
+      "query": "/Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-t-kategorie&_summary=count"
     },
     {
       "name": "Onko-TNM_N_Kategorie-mii",
