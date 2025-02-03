@@ -2,7 +2,7 @@
     "resourceType": "Bundle",
     "meta": {
         "versionId": "1",
-        "lastUpdated": "2024-11-27T12:45:29.140933+01:00",
+        "lastUpdated": "2025-01-27T13:54:09.795457+01:00",
         "profile": [
             "http://medizininformatik-initiative.de/fhir/Bundle/search-bundle-report|1.1"
         ],
@@ -256,48 +256,6 @@
         {
             "request": {
                 "method": "GET",
-                "url": "Procedure?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/extrakorporales-verfahren&_summary=count"
-            }
-        },
-        {
-            "request": {
-                "method": "GET",
-                "url": "Procedure?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/beatmung&_summary=count"
-            }
-        },
-        {
-            "request": {
-                "method": "GET",
-                "url": "Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/monitoring-und-vitaldaten&_summary=count"
-            }
-        },
-        {
-            "request": {
-                "method": "GET",
-                "url": "Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/blutdruck&_summary=count"
-            }
-        },
-        {
-            "request": {
-                "method": "GET",
-                "url": "Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Koerpertemperatur_Generisch&_summary=count"
-            }
-        },
-        {
-            "request": {
-                "method": "GET",
-                "url": "Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/sauerstoffsaettigung-im-arteriellen-blut-durch-pulsoxymetrie&_summary=count"
-            }
-        },
-        {
-            "request": {
-                "method": "GET",
-                "url": "Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/herzfrequenz&_summary=count"
-            }
-        },
-        {
-            "request": {
-                "method": "GET",
                 "url": "ServiceRequest?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/anforderung-genetischer-test&_summary=count"
             }
         },
@@ -484,6 +442,144 @@
         {
             "request": {
                 "method": "GET",
+                "url": "DiagnosticReport?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologischer-befund&_summary=count"
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "url": "ImagingStudy?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsstudie&_summary=count"
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "url": "Procedure?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/extrakorporales-verfahren&_summary=count"
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "url": "Procedure?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/beatmung&_summary=count"
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "url": "Observation?_profile:below=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-monitoring-und-vitaldaten&_summary=count"
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "url": "Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/blutdruck&_summary=count"
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "url": "Observation?_profile:below=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-generisch&_summary=count"
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "url": "Observation?_profile:below=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-o2saettigung-im-arteriellen-blut-durch-pulsoxymetrie&_summary=count"
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "url": "Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/herzfrequenz&_summary=count"
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "url": "Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/atemfrequenz&_summary=count"
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "url": "Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/koerpergewicht&_summary=count"
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "url": "Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/koerpergroesse&_summary=count"
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "url": "Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/arterieller-blutdruck&_summary=count"
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "url": "ResearchStudy?_profile:below=https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-pr-studie-studie&_summary=count"
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "url": "DiagnosticReport?_profile:below=https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-diagnostic-report&_summary=count"
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "url": "Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-kultur-nachweis&_summary=count"
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "url": "Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-empfindlichkeit&_summary=count"
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "url": "Condition?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-diagnose-primaertumor&_summary=count"
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "url": "Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-grading&_summary=count"
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "url": "Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-t-kategorie&_summary=count"
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "url": "Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-n-kategorie&_summary=count"
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "url": "Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-m-kategorie&_summary=count"
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "url": "Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-fernmetastasen&_summary=count"
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
                 "url": "Encounter?date=eq2000&_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung&type=http://fhir.de/CodeSystem/Kontaktebene|einrichtungskontakt&_summary=count"
             }
         },
@@ -629,6 +725,12 @@
             "request": {
                 "method": "GET",
                 "url": "Encounter?date=eq2024&_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung&type=http://fhir.de/CodeSystem/Kontaktebene|einrichtungskontakt&_summary=count"
+            }
+        },
+        {
+            "request": {
+                "method": "GET",
+                "url": "Encounter?date=eq2025&_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung&type=http://fhir.de/CodeSystem/Kontaktebene|einrichtungskontakt&_summary=count"
             }
         },
         {

@@ -241,48 +241,6 @@
       "query": "/Specimen?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Specimen&_summary=count"
     },
     {
-      "name": "ICU-Extraporaleverfahren-mii",
-      "type": "count",
-      "category": "profile",
-      "query": "/Procedure?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/extrakorporales-verfahren&_summary=count"
-    },
-    {
-      "name": "ICU-Beatmung-mii",
-      "type": "count",
-      "category": "profile",
-      "query": "/Procedure?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/beatmung&_summary=count"
-    },
-    {
-      "name": "ICU-Monitoringvitaldaten-mii",
-      "type": "count",
-      "category": "profile",
-      "query": "/Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/monitoring-und-vitaldaten&_summary=count"
-    },
-    {
-      "name": "ICU-Blutdruck-mii",
-      "type": "count",
-      "category": "profile",
-      "query": "/Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/blutdruck&_summary=count"
-    },
-    {
-      "name": "ICU-Koerpertemp-mii",
-      "type": "count",
-      "category": "profile",
-      "query": "/Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/Koerpertemperatur_Generisch&_summary=count"
-    },
-    {
-      "name": "ICU-Pulsoxy-mii",
-      "type": "count",
-      "category": "profile",
-      "query": "/Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/sauerstoffsaettigung-im-arteriellen-blut-durch-pulsoxymetrie&_summary=count"
-    },
-    {
-      "name": "ICU-Herzfrequenz-mii",
-      "type": "count",
-      "category": "profile",
-      "query": "/Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/herzfrequenz&_summary=count"
-    },
-    {
       "name": "Molgen-Anforderung-mii",
       "type": "count",
       "category": "profile",
@@ -468,6 +426,144 @@
       "category": "profile",
       "query": "/Media?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/StructureDefinition/mii-pr-patho-attached-image&_summary=count"
     },
+    {
+      "name": "Bild-Radiologischer-Befund-mii",
+      "type": "count",
+      "category": "profile",
+      "query": "/DiagnosticReport?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-radiologischer-befund&_summary=count"
+    },
+    {
+      "name": "Bild-Bildgebungsstudie-mii",
+      "type": "count",
+      "category": "profile",
+      "query": "/ImagingStudy?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-pr-bildgebung-bildgebungsstudie&_summary=count"
+    },
+    {
+      "name": "ICU-Extrakorporaleverfahren-mii",
+      "type": "count",
+      "category": "profile",
+      "query": "/Procedure?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/extrakorporales-verfahren&_summary=count"
+    },
+    {
+      "name": "ICU-Beatmung-mii",
+      "type": "count",
+      "category": "profile",
+      "query": "/Procedure?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/beatmung&_summary=count"
+    },
+    {
+      "name": "ICU-Monitoringvitaldaten-mii",
+      "type": "count",
+      "category": "profile",
+      "query": "/Observation?_profile:below=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-monitoring-und-vitaldaten&_summary=count"
+    },
+    {
+      "name": "ICU-Blutdruck-mii",
+      "type": "count",
+      "category": "profile",
+      "query": "/Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/blutdruck&_summary=count"
+    },
+    {
+      "name": "ICU-Koerpertemp-mii",
+      "type": "count",
+      "category": "profile",
+      "query": "/Observation?_profile:below=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-koerpertemperatur-generisch&_summary=count"
+    },
+    {
+      "name": "ICU-Pulsoxy-mii",
+      "type": "count",
+      "category": "profile",
+      "query": "/Observation?_profile:below=https://gematik.de/fhir/isik/StructureDefinition/sd-mii-icu-o2saettigung-im-arteriellen-blut-durch-pulsoxymetrie&_summary=count"
+    },
+    {
+      "name": "ICU-Herzfrequenz-mii",
+      "type": "count",
+      "category": "profile",
+      "query": "/Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/herzfrequenz&_summary=count"
+    },
+    {
+      "name": "ICU-Atemfrequenz-mii",
+      "type": "count",
+      "category": "profile",
+      "query": "/Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/atemfrequenz&_summary=count"
+    },
+    {
+      "name": "ICU-Koerpergewicht-mii",
+      "type": "count",
+      "category": "profile",
+      "query": "/Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/koerpergewicht&_summary=count"
+    },
+    {
+      "name": "ICU-Koerpergroesse-mii",
+      "type": "count",
+      "category": "profile",
+      "query": "/Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/koerpergroesse&_summary=count"
+    },
+    {
+      "name": "ICU-Arterieller-Blutdruck-mii",
+      "type": "count",
+      "category": "profile",
+      "query": "/Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/arterieller-blutdruck&_summary=count"
+    },
+    {
+      "name": "Med.Forsch.Vorh.-Studie-mii",
+      "type": "count",
+      "category": "profile",
+      "query": "/ResearchStudy?_profile:below=https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-pr-studie-studie&_summary=count"
+    },
+    {
+      "name": "Mikrobio-Diagnostic-Report-mii",
+      "type": "count",
+      "category": "profile",
+      "query": "/DiagnosticReport?_profile:below=https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-diagnostic-report&_summary=count"
+    },
+    {
+      "name": "Mikrobio-Kultur_Nachweis-mii",
+      "type": "count",
+      "category": "profile",
+      "query": "/Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-kultur-nachweis&_summary=count"
+    },
+    {
+      "name": "Mikrobio-Empfindlichkeit-mii",
+      "type": "count",
+      "category": "profile",
+      "query": "/Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/modul-mikrobio/StructureDefinition/mii-pr-mikrobio-empfindlichkeit&_summary=count"
+    },
+    {
+      "name": "Onko-Diagnose-mii",
+      "type": "count",
+      "category": "profile",
+      "query": "/Condition?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-diagnose-primaertumor&_summary=count"
+    },
+    {
+      "name": "Onko-Grading-mii",
+      "type": "count",
+      "category": "profile",
+      "query": "/Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-grading&_summary=count"
+    },
+    {
+      "name": "Onko-TNM_T_Kategorie-mii",
+      "type": "count",
+      "category": "profile",
+      "query": "/Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-t-kategorie&_summary=count"
+    },
+    {
+      "name": "Onko-TNM_N_Kategorie-mii",
+      "type": "count",
+      "category": "profile",
+      "query": "/Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-n-kategorie&_summary=count"
+    },
+    {
+      "name": "Onko-TNM_M_Kategorie-mii",
+      "type": "count",
+      "category": "profile",
+      "query": "/Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-tnm-m-kategorie&_summary=count"
+    },
+    {
+      "name": "Onko-Fernmetastasen-mii",
+      "type": "count",
+      "category": "profile",
+      "query": "/Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-fernmetastasen&_summary=count"
+    },  
     {
       "name": "Jahresabfrage-Fall",
       "type": "year",
