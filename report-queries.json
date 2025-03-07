@@ -563,12 +563,12 @@
       "type": "count",
       "category": "profile",
       "query": "/Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-fernmetastasen&_summary=count"
-    },  
+    },
     {
       "name": "Jahresabfrage-Fall",
       "type": "year",
       "category": "profile",
-      "query": "/Encounter?_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung&type=http://fhir.de/CodeSystem/Kontaktebene|einrichtungskontakt&_summary=count",
+      "query": "/Encounter?_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung&type=http://fhir.de/CodeSystem/Kontaktebene|einrichtungskontakt&class=http://terminology.hl7.org/CodeSystem/v3-ActCode|IMP&_summary=count",
       "dateParam": "date",
       "startYear": 2000
     }
