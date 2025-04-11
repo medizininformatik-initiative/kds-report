@@ -9,7 +9,7 @@ bundle = {
         "versionId": "1",
         "lastUpdated": datetime.now(pytz.timezone('Europe/Berlin')).isoformat(),
         "profile": [
-            "http://medizininformatik-initiative.de/fhir/Bundle/search-bundle-report|1.1"
+            "http://medizininformatik-initiative.de/fhir/Bundle/search-bundle-report|1.2"
         ],
         "tag": [
             {
@@ -19,8 +19,8 @@ bundle = {
         ]
     },
     "identifier": {
-        "system": "http://medizininformatik-initiative.de/fhir/CodeSystem/report",
-        "value": "search-bundle-v1.1"
+        "system": "http://medizininformatik-initiative.de/sid/search-bundle-identifier",
+        "value": "search-bundle-v1.2"
     },
     "type": "batch",
     "entry": []
