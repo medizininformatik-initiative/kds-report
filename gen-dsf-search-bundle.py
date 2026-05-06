@@ -2,6 +2,12 @@ import json
 from datetime import date, datetime
 from urllib.parse import urlparse
 import pytz
+import argparse
+
+parser = argparse.ArgumentParser()
+parser.add_argument('--bundle-version', type=str, required=True)
+args = parser.parse_args()
+search_bundle_version = args.bundle_version
 
 bundle = {
     "resourceType": "Bundle",
@@ -9,7 +15,7 @@ bundle = {
         "versionId": "1",
         "lastUpdated": datetime.now(pytz.timezone('Europe/Berlin')).isoformat(),
         "profile": [
-            "http://medizininformatik-initiative.de/fhir/Bundle/search-bundle-report|1.1"
+            f"http://medizininformatik-initiative.de/fhir/Bundle/search-bundle-report|{search_bundle_version}"
         ],
         "tag": [
             {
@@ -19,8 +25,8 @@ bundle = {
         ]
     },
     "identifier": {
-        "system": "http://medizininformatik-initiative.de/fhir/CodeSystem/report",
-        "value": "search-bundle-v1.1"
+        "system": "http://medizininformatik-initiative.de/sid/search-bundle-identifier",
+        "value": f"search-bundle-v{search_bundle_version}"
     },
     "type": "batch",
     "entry": []
@@ -30,7 +36,7 @@ bundle = {
 def append_year_query(query):
 
     cur_year = query['startYear']
-    last_year = date.today().year
+    last_year = date.today().year + 2
 
     while cur_year <= last_year:
 
@@ -77,5 +83,5 @@ bundle['entry'].append({
         })
 
 
-with open("dsf-search-bundle.json", "w+") as dsf_search_bundle_file:
+with open(f"dsf-search-bundle_{search_bundle_version}.json", "w+") as dsf_search_bundle_file:
     json.dump(bundle, dsf_search_bundle_file)
