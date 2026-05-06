@@ -25,7 +25,7 @@ bundle = {
         ]
     },
     "identifier": {
-        "system": "http://medizininformatik-initiative.de/fhir/CodeSystem/report",
+        "system": "http://medizininformatik-initiative.de/sid/search-bundle-identifier",
         "value": f"search-bundle-v{search_bundle_version}"
     },
     "type": "batch",
