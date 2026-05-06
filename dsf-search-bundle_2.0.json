@@ -2,7 +2,7 @@
     "resourceType": "Bundle",
     "meta": {
         "versionId": "1",
-        "lastUpdated": "2026-05-06T09:45:07.285124+02:00",
+        "lastUpdated": "2026-05-06T11:42:18.279272+02:00",
         "profile": [
             "http://medizininformatik-initiative.de/fhir/Bundle/search-bundle-report|2.0"
         ],
@@ -14,7 +14,7 @@
         ]
     },
     "identifier": {
-        "system": "http://medizininformatik-initiative.de/fhir/CodeSystem/report",
+        "system": "http://medizininformatik-initiative.de/sid/search-bundle-identifier",
         "value": "search-bundle-v2.0"
     },
     "type": "batch",
