@@ -5,6 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 
+## [2.1.0] - 2026-05-06
+
+### Added
+
+- Added Encounter queries - distinguish between full and part inpatient, add class and status finished
+- Added Consent query which considers: category, status and type and fix to .8 provision ([#41](https://github.com/medizininformatik-initiative/kds-report/issues/41))
+
+### Changed
+
+- Make search bundle version configurable
+- Add two extra years from date of generation to year queries ([#42](https://github.com/medizininformatik-initiative/kds-report/issues/42))
+- Update search bundle identifier to new naming system ([#37](https://github.com/medizininformatik-initiative/kds-report/issues/37))
+
 ## [2.0.3] - 2025-02-03
 
 ### Added
