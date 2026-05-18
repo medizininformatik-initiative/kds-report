@@ -2,7 +2,7 @@
     "resourceType": "Bundle",
     "meta": {
         "versionId": "1",
-        "lastUpdated": "2026-05-06T11:42:18.279272+02:00",
+        "lastUpdated": "2026-05-07T10:02:39.722093+02:00",
         "profile": [
             "http://medizininformatik-initiative.de/fhir/Bundle/search-bundle-report|2.0"
         ],
@@ -677,12 +677,6 @@
             "request": {
                 "method": "GET",
                 "url": "DocumentReference?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-dokument/StructureDefinition/mii-pr-dokument-dokument&_summary=count"
-            }
-        },
-        {
-            "request": {
-                "method": "GET",
-                "url": "Extension?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-dokument/StructureDefinition/mii-ex-dokument-nlp-processing-status&_summary=count"
             }
         },
         {
