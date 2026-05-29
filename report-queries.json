@@ -734,7 +734,7 @@
       "name": "Jahresabfrage-Fall-Vollstationaer",
       "type": "year",
       "category": "profile",
-      "query": "/Encounter?_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung&type=http://fhir.de/CodeSystem/Kontaktebene|einrichtungskontakt&type=http://fhir.de/CodeSystem/kontaktart-de|vorstationaer&class=http://terminology.hl7.org/CodeSystem/v3-ActCode|IMP&status=finished&_summary=count",
+      "query": "/Encounter?_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung&type=http://fhir.de/CodeSystem/Kontaktebene|einrichtungskontakt&class=http://terminology.hl7.org/CodeSystem/v3-ActCode|IMP&status=finished&_summary=count",
       "dateParam": "date",
       "startYear": 2000
     },
