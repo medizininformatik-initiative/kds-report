@@ -613,6 +613,12 @@
       "query": "/Procedure?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/genomic-study-analysis&_summary=count"
     },
     {
+      "name": "MTB-Molekularer-Biomarker-mii",
+      "type": "count",
+      "category": "profile",
+      "query": "/Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-molekularer-biomarker&_summary=count"
+    },
+    {
       "name": "PRO-Questionnaire-Response-mii",
       "type": "count",
       "category": "profile",
