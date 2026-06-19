@@ -32,10 +32,6 @@ bundle = {
     "entry": []
 }
 
-profile_v1_2 = "http://medizininformatik-initiative.de/fhir/Bundle/search-bundle-report|1.2"
-identifier_system_v1_2 = "http://medizininformatik-initiative.de/sid/search-bundle-identifier"
-identifier_value_v1_2 = "search-bundle-v1.2"
-
 
 def append_year_query(query):
 
@@ -89,12 +85,3 @@ bundle['entry'].append({
 
 with open(f"dsf-search-bundle_{search_bundle_version}.json", "w+") as dsf_search_bundle_file:
     json.dump(bundle, dsf_search_bundle_file)
-
-
-with open("dsf-search-bundle_v1_2.json", "w+") as dsf_search_bundle_file_v1_2:
-    
-    bundle["meta"]["profile"][0] = profile_v1_2
-    bundle["identifier"]["system"] = identifier_system_v1_2
-    bundle["identifier"]["value"] = identifier_value_v1_2
-
-    json.dump(bundle, dsf_search_bundle_file_v1_2)
