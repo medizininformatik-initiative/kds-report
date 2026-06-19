@@ -1,6 +1,6 @@
 {
   "siteName": "my-site-name",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "datetime": "",
   "capabilityStatement": {
     "software": {}
@@ -565,12 +565,184 @@
       "query": "/Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-pr-onko-fernmetastasen&_summary=count"
     },  
     {
+      "name": "Medikation-Medikationsliste-mii",
+      "type": "count",
+      "category": "profile",
+      "query": "/List?_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/medikationsliste&_summary=count"
+    },
+    {
+      "name": "MTB-Einfache-Variante-mii",
+      "type": "count",
+      "category": "profile",
+      "query": "/Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-einfache-variante&_summary=count"
+    },
+    {
+      "name": "MTB-Copy-Number-Variant-mii",
+      "type": "count",
+      "category": "profile",
+      "query": "/Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-copy-number-variant&_summary=count"
+    },
+    {
+      "name": "MTB-DNA-Fusion-mii",
+      "type": "count",
+      "category": "profile",
+      "query": "/Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-dna-fusion&_summary=count"
+    },
+    {
+      "name": "MTB-RNA-Fusion-mii",
+      "type": "count",
+      "category": "profile",
+      "query": "/Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-rna-fusion&_summary=count"
+    },
+    {
+      "name": "MTB-RNA-Seq-mii",
+      "type": "count",
+      "category": "profile",
+      "query": "/Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-rna-seq&_summary=count"
+    },
+    {
+      "name": "MTB-Therapeutische-Implikation-mii",
+      "type": "count",
+      "category": "profile",
+      "query": "/Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-therapeutische-implikation&_summary=count"
+    },
+    {
+      "name": "MTB-Genomic-Study-Analysis-mii",
+      "type": "count",
+      "category": "profile",
+      "query": "/Procedure?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/genomic-study-analysis&_summary=count"
+    },
+    {
+      "name": "MTB-Molekularer-Biomarker-mii",
+      "type": "count",
+      "category": "profile",
+      "query": "/Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-molekularer-biomarker&_summary=count"
+    },
+    {
+      "name": "PRO-Questionnaire-Response-mii",
+      "type": "count",
+      "category": "profile",
+      "query": "/QuestionnaireResponse?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-questionnaire-response&_summary=count"
+    },
+    {
+      "name": "PRO-Score-Instance-mii",
+      "type": "count",
+      "category": "profile",
+      "query": "/Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-score-instance&_summary=count"
+    },
+    {
+      "name": "Seltene-HPO-Assessment-mii",
+      "type": "count",
+      "category": "profile",
+      "query": "/Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-hpo-assessment&_summary=count"
+    },
+    {
+      "name": "Seltene-Clinical-Diagnosis-mii",
+      "type": "count",
+      "category": "profile",
+      "query": "/Condition?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-clinical-diagnosis&_summary=count"
+    },
+    {
+      "name": "Seltene-Genetic-Diagnosis-mii",
+      "type": "count",
+      "category": "profile",
+      "query": "/Condition?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-genetic-diagnosis&_summary=count"
+    },
+    {
+      "name": "Seltene-Familienanamnese-mii",
+      "type": "count",
+      "category": "profile",
+      "query": "/FamilyMemberHistory?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-familienanamnese&_summary=count"
+    },
+    {
+      "name": "Seltene-Therapieplan-mii",
+      "type": "count",
+      "category": "profile",
+      "query": "/CarePlan?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-therapieplan&_summary=count"
+    },
+    {
+      "name": "Seltene-Therapieempfehlung-mii",
+      "type": "count",
+      "category": "profile",
+      "query": "/MedicationRequest?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-pr-seltene-therapieempfehlung&_summary=count"
+    },
+    {
+      "name": "Dokument-Dokument-mii",
+      "type": "count",
+      "category": "profile",
+      "query": "/DocumentReference?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-dokument/StructureDefinition/mii-pr-dokument-dokument&_summary=count"
+    },
+    {
+      "name": "Kardio-Linksventrikulaere-Ejektionsfraktion-mii",
+      "type": "count",
+      "category": "profile",
+      "query": "/Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-kardio/StructureDefinition/mii-pr-kardio-linksventrikulaere-ejektionsfraktion&_summary=count"
+    },
+    {
+      "name": "Kardio-Score-Modifizierte-Rankin-Skala-mii",
+      "type": "count",
+      "category": "profile",
+      "query": "/Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-kardio/StructureDefinition/mii-pr-kardio-score-modifizierte-rankin-skala&_summary=count"
+    },
+    {
+      "name": "Kardio-Score-Nyha-mii",
+      "type": "count",
+      "category": "profile",
+      "query": "/Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-kardio/StructureDefinition/mii-pr-kardio-score-nyha&_summary=count"
+    },
+    {
+      "name": "Kardio-Kardiale-Deviceimplantation-mii",
+      "type": "count",
+      "category": "profile",
+      "query": "/Procedure?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-kardio/StructureDefinition/mii-pr-kardio-kardiale-deviceimplantation&_summary=count"
+    },
+    {
+      "name": "Kardio-Device-mii",
+      "type": "count",
+      "category": "profile",
+      "query": "/Device?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-kardio/StructureDefinition/mii-pr-kardio-device&_summary=count"
+    },
+    {
+      "name": "Kardio-Diagnose-mii",
+      "type": "count",
+      "category": "profile",
+      "query": "/Condition?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-kardio/StructureDefinition/mii-pr-kardio-diagnose&_summary=count"
+    },
+    {
+      "name": "Kardio-Diagnose-Prozedur-Nein-Unbekannt-mii",
+      "type": "count",
+      "category": "profile",
+      "query": "/Observation?_profile:below=https://www.medizininformatik-initiative.de/fhir/ext/modul-kardio/StructureDefinition/mii-pr-kardio-diagnose-prozedur-nein-unbekannt&_summary=count"
+    },
+    {
       "name": "Jahresabfrage-Fall",
       "type": "year",
       "category": "profile",
       "query": "/Encounter?_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung&type=http://fhir.de/CodeSystem/Kontaktebene|einrichtungskontakt&_summary=count",
       "dateParam": "date",
       "startYear": 2000
+    },
+    {
+      "name": "Jahresabfrage-Fall-Teilstationaer",
+      "type": "year",
+      "category": "profile",
+      "query": "/Encounter?_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung&type=http://fhir.de/CodeSystem/Kontaktebene|einrichtungskontakt&type=http://fhir.de/CodeSystem/kontaktart-de|teilstationaer&class=http://terminology.hl7.org/CodeSystem/v3-ActCode|IMP&status=finished&_summary=count",
+      "dateParam": "date",
+      "startYear": 2000
+    },
+    {
+      "name": "Jahresabfrage-Fall-Vollstationaer",
+      "type": "year",
+      "category": "profile",
+      "query": "/Encounter?_profile:below=https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung&type=http://fhir.de/CodeSystem/Kontaktebene|einrichtungskontakt&class=http://terminology.hl7.org/CodeSystem/v3-ActCode|IMP&status=finished&_summary=count",
+      "dateParam": "date",
+      "startYear": 2000
+    },
+        {
+      "name": "Consent-Broad-Consent-mii",
+      "type": "count",
+      "category": "profile",
+      "query": "/Consent?_profile:below=https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung&category=https://www.medizininformatik-initiative.de/fhir/modul-consent/CodeSystem/mii-cs-consent-version-modules|2.16.840.1.113883.3.1937.777.24.2.184,https://www.medizininformatik-initiative.de/fhir/modul-consent/CodeSystem/mii-cs-consent-consent_category|2.16.840.1.113883.3.1937.777.24.2.184&mii-provision-provision-code-type=urn:oid:2.16.840.1.113883.3.1937.777.24.5.3|2.16.840.1.113883.3.1937.777.24.5.3.8$permit&status=active&_summary=count"
     }
   ]
 }
