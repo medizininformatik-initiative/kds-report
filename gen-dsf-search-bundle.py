@@ -91,10 +91,10 @@ with open(f"dsf-search-bundle_{search_bundle_version}.json", "w+") as dsf_search
     json.dump(bundle, dsf_search_bundle_file)
 
 
-with open("dsf-search-bundle_v1_2.json", "w+") as dsf_search_bundle_file_v1_2:
-    
-    bundle["meta"]["profile"][0] = profile_v1_2
-    bundle["identifier"]["system"] = identifier_system_v1_2
-    bundle["identifier"]["value"] = identifier_value_v1_2
-
-    json.dump(bundle, dsf_search_bundle_file_v1_2)
+#with open("dsf-search-bundle_v1_2.json", "w+") as dsf_search_bundle_file_v1_2:
+#    
+#    bundle["meta"]["profile"][0] = profile_v1_2
+#    bundle["identifier"]["system"] = identifier_system_v1_2
+#    bundle["identifier"]["value"] = identifier_value_v1_2
+#
+#    json.dump(bundle, dsf_search_bundle_file_v1_2)
